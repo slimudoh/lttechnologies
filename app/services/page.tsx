@@ -1,338 +1,187 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Shield,
-  TrendingUp,
-  Users,
-  Calculator,
-  ArrowRight,
-  CheckCircle,
-  Target,
-  PieChart,
-} from "lucide-react";
+import { ArrowRight, MessageSquare, Rocket } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import type { Metadata } from "next";
+import { Services } from "@/components/services/Services";
+import { Capabilities } from "@/components/services/Capabilities";
+import { Process } from "@/components/services/Process";
+
+export const metadata: Metadata = {
+  title: "Services | LT Technologies",
+  description:
+    "LT Technologies helps businesses build digital products, automate operations, grow online, and keep their technology running reliably.",
+};
 
 export default function ServicesPage() {
-  const services = [
-    {
-      slug: "portfolio-management",
-      title: "Portfolio Management",
-      description:
-        "Professional investment management tailored to your financial goals and risk tolerance.",
-      icon: PieChart,
-      color: "cyan",
-      features: [
-        "Diversified Investment Strategy",
-        "Regular Rebalancing",
-        "Performance Monitoring",
-        "Risk Management",
-      ],
-      minInvestment: "₹25 Lakhs",
-      managementFee: "1.5% - 2.5%",
-    },
-    {
-      slug: "wealth-planning",
-      title: "Wealth Planning",
-      description:
-        "Comprehensive financial planning to help you build and preserve wealth over the long term.",
-      icon: Target,
-      color: "amber",
-      features: [
-        "Goal-Based Planning",
-        "Retirement Planning",
-        "Estate Planning",
-        "Insurance Review",
-      ],
-      minInvestment: "₹10 Lakhs",
-      managementFee: "Consultation Based",
-    },
-    {
-      slug: "risk-assessment",
-      title: "Risk Assessment",
-      description:
-        "Thorough analysis of your risk profile to optimize your investment strategy.",
-      icon: Shield,
-      color: "cyan",
-      features: [
-        "Risk Profiling",
-        "Stress Testing",
-        "Scenario Analysis",
-        "Risk Mitigation",
-      ],
-      minInvestment: "₹5 Lakhs",
-      managementFee: "₹25,000 - ₹50,000",
-    },
-    {
-      slug: "tax-optimization",
-      title: "Tax Optimization",
-      description:
-        "Strategic tax planning to maximize your after-tax returns and minimize tax liability.",
-      icon: Calculator,
-      color: "amber",
-      features: [
-        "Tax-Loss Harvesting",
-        "Asset Location",
-        "Tax-Efficient Investing",
-        "Compliance Support",
-      ],
-      minInvestment: "₹15 Lakhs",
-      managementFee: "0.5% - 1.0%",
-    },
-  ];
-
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-serif font-black text-gray-900 mb-6">
-              Our <span className="text-cyan-600">Services</span>
+    <main>
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-cyan-50 py-24 md:py-28">
+        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-cyan-100/60 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-cyan-100/40 blur-3xl" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center rounded-full border border-cyan-200 bg-white px-4 py-2 text-sm font-medium text-cyan-700 mb-6">
+              <Rocket className="h-4 w-4 mr-2" />
+              Technology for modern businesses
+            </div>
+
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-black tracking-tight text-gray-900 mb-6">
+              Technology That Helps Your Business{" "}
+              <span className="text-cyan-600">Move Forward.</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-sans">
-              Comprehensive investment and wealth management services designed
-              to help you achieve your financial goals with confidence and peace
-              of mind.
+
+            <p className="text-xl md:text-2xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
+              From building digital products to automating operations and
+              growing your online presence, we provide the technology and
+              expertise your business needs to succeed.
             </p>
-          </div>
-        </div>
-      </section>
 
-      {/* Services Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {services.map((service) => {
-              const IconComponent = service.icon;
-              const bgColor =
-                service.color === "cyan" ? "bg-cyan-100" : "bg-amber-100";
-              const textColor =
-                service.color === "cyan" ? "text-cyan-600" : "text-amber-600";
-              const borderColor =
-                service.color === "cyan"
-                  ? "border-cyan-600"
-                  : "border-amber-600";
-
-              return (
-                <Card
-                  key={service.slug}
-                  className="border-0 shadow-xl hover:shadow-2xl transition-shadow"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-cyan-600 hover:bg-cyan-700 text-white px-8"
                 >
-                  <CardHeader className="pb-4">
-                    <div
-                      className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mb-4`}
-                    >
-                      <IconComponent className={`h-8 w-8 ${textColor}`} />
-                    </div>
-                    <CardTitle className="text-2xl font-serif font-bold text-gray-900">
-                      {service.title}
-                    </CardTitle>
-                    <p className="text-gray-600 font-sans leading-relaxed">
-                      {service.description}
+                  Start a Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+
+              <Link href="/work">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 border-gray-300 hover:border-cyan-600 hover:text-cyan-600"
+                >
+                  View Our Work
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <Services />
+
+      {/* Capabilities */}
+      <Capabilities />
+
+      {/* Why Us */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 mb-4">
+                Why LT Technologies
+              </p>
+
+              <h2 className="text-4xl md:text-5xl font-serif font-black text-gray-900 mb-6">
+                We don't just build technology. We solve problems.
+              </h2>
+
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                Good technology should make your business better. That's why we
+                focus on understanding the problem first, choosing the right
+                solution, and building something that delivers lasting value.
+              </p>
+
+              <Link href="/about">
+                <Button
+                  variant="outline"
+                  className="border-cyan-600 text-cyan-600 hover:bg-cyan-50"
+                >
+                  Learn More About Us
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+
+            <div className="space-y-5">
+              {[
+                {
+                  title: "Business-first thinking",
+                  description:
+                    "We focus on your business objectives rather than building technology for technology's sake.",
+                },
+                {
+                  title: "Modern technology",
+                  description:
+                    "We use current tools and engineering practices to build maintainable and scalable solutions.",
+                },
+                {
+                  title: "Practical solutions",
+                  description:
+                    "We recommend technology that makes sense for your budget, users, operations, and growth plans.",
+                },
+                {
+                  title: "Long-term partnership",
+                  description:
+                    "Our relationship doesn't have to end when your project launches. We can continue supporting and improving it.",
+                },
+              ].map((item, index) => (
+                <div
+                  key={item.title}
+                  className="flex gap-5 p-5 rounded-2xl bg-gray-50"
+                >
+                  <div className="w-10 h-10 rounded-full bg-cyan-600 text-white flex items-center justify-center flex-shrink-0 font-bold">
+                    {index + 1}
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-serif font-bold text-gray-900 mb-1">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-gray-600 leading-relaxed">
+                      {item.description}
                     </p>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="space-y-3">
-                      <h4 className="font-serif font-bold text-gray-900">
-                        Key Features:
-                      </h4>
-                      <ul className="space-y-2">
-                        {service.features.map((feature) => (
-                          <li
-                            key={feature}
-                            className="flex items-center font-sans text-gray-600"
-                          >
-                            <CheckCircle className="h-4 w-4 text-cyan-600 mr-3 flex-shrink-0" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-200">
-                      <div>
-                        <p className="text-sm text-gray-500 font-sans">
-                          Minimum Investment
-                        </p>
-                        <p className="font-serif font-bold text-gray-900">
-                          {service.minInvestment}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-gray-500 font-sans">
-                          Fee Structure
-                        </p>
-                        <p className="font-serif font-bold text-gray-900">
-                          {service.managementFee}
-                        </p>
-                      </div>
-                    </div>
-
-                    <Link href={`/services/${service.slug}`}>
-                      <Button
-                        className={`w-full ${borderColor} ${textColor} hover:bg-cyan-50 bg-transparent`}
-                        variant="outline"
-                      >
-                        Learn More
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Our Services */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
-              Why Choose Our Services?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
-              We combine decades of experience with cutting-edge technology to
-              deliver exceptional results.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg text-center">
-              <CardContent className="pt-8 pb-8">
-                <TrendingUp className="h-16 w-16 text-cyan-600 mx-auto mb-4" />
-                <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
-                  Proven Track Record
-                </h3>
-                <p className="text-gray-600 font-sans">
-                  Over 20 years of consistent outperformance with average annual
-                  returns of 15.2%
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg text-center">
-              <CardContent className="pt-8 pb-8">
-                <Users className="h-16 w-16 text-amber-600 mx-auto mb-4" />
-                <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
-                  Personalized Approach
-                </h3>
-                <p className="text-gray-600 font-sans">
-                  Dedicated relationship managers and customized strategies for
-                  each client's unique needs
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg text-center">
-              <CardContent className="pt-8 pb-8">
-                <Shield className="h-16 w-16 text-cyan-600 mx-auto mb-4" />
-                <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
-                  Regulatory Compliance
-                </h3>
-                <p className="text-gray-600 font-sans">
-                  SEBI registered and fully compliant with all regulatory
-                  requirements for your peace of mind
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Overview */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
-              Our Process
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
-              A systematic approach to understanding your needs and delivering
-              exceptional results.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-serif font-black">
-                1
-              </div>
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                Discovery
-              </h3>
-              <p className="text-gray-600 font-sans">
-                Understand your financial goals, risk tolerance, and investment
-                preferences through detailed consultation.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-serif font-black">
-                2
-              </div>
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                Strategy
-              </h3>
-              <p className="text-gray-600 font-sans">
-                Develop a customized investment strategy and financial plan
-                tailored to your specific needs.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-serif font-black">
-                3
-              </div>
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                Implementation
-              </h3>
-              <p className="text-gray-600 font-sans">
-                Execute the strategy with careful attention to timing,
-                allocation, and risk management.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-serif font-black">
-                4
-              </div>
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                Monitoring
-              </h3>
-              <p className="text-gray-600 font-sans">
-                Continuous monitoring, regular reviews, and adjustments to
-                ensure optimal performance.
-              </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-cyan-600">
+      {/* Process */}
+      <Process />
+
+      {/* CTA */}
+      <section className="py-24 bg-cyan-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-serif font-black text-white mb-4">
-            Ready to Get Started?
+          <MessageSquare className="h-10 w-10 text-white/80 mx-auto mb-6" />
+
+          <h2 className="text-4xl md:text-5xl font-serif font-black text-white mb-5">
+            Have a project in mind?
           </h2>
-          <p className="text-xl text-cyan-100 mb-8 font-sans">
-            Schedule a consultation to discuss which services are right for your
-            investment goals.
+
+          <p className="text-xl text-cyan-100 leading-relaxed mb-9">
+            Tell us what you're trying to build, improve, or automate. We'll
+            help you figure out the best way forward.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/consultation">
+            <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-4 text-lg font-sans"
+                className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-6"
               >
-                Schedule Consultation
+                Start a Conversation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/pricing">
+
+            <Link href="/work">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-cyan-600 px-8 py-4 text-lg font-sans bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-cyan-600 px-8 py-6 bg-transparent"
               >
-                View Pricing
+                View Our Work
               </Button>
             </Link>
           </div>
@@ -340,6 +189,6 @@ export default function ServicesPage() {
       </section>
 
       <Footer />
-    </div>
+    </main>
   );
 }

@@ -17,304 +17,299 @@ import {
   Mail,
   MapPin,
   CheckCircle,
-  TrendingUp,
+  ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
-
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: {
+    default: "Consultation | LT Technologies Limited",
+    template: "%s | LT Technologies",
+  },
+  description:
+    "Talk to LT Technologies about your software, AI automation, digital growth, or technology needs.",
+};
 export default function ConsultationPage() {
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-cyan-600 mb-4">
+              Let's Work Together
+            </p>
             <h1 className="text-5xl md:text-6xl font-serif font-black text-gray-900 mb-6">
-              Schedule Your <span className="text-cyan-600">Consultation</span>
+              Let's Build Something <span className="text-cyan-600">Great</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-sans">
-              Take the first step towards your financial goals. Book a
-              complimentary consultation with our expert advisors to discuss
-              your investment needs and explore how we can help you build
-              wealth.
+            <p className="text-xl text-gray-600 leading-relaxed font-sans">
+              Have an idea, a business challenge, or an existing system that
+              needs improvement? Tell us what you're working on and we'll help
+              you identify the right technology solution.
             </p>
           </div>
         </div>
       </section>
-
-      {/* Main Content */}
+      {/* Main Consultation Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Consultation Form */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Form */}
             <Card className="border-0 shadow-xl">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <CardTitle className="text-3xl font-serif font-bold text-gray-900">
-                  Book Your Consultation
+                  Tell Us About Your Project
                 </CardTitle>
-                <p className="text-gray-600 font-sans">
-                  Fill out the form below and we'll get back to you within 24
-                  hours to schedule your personalized consultation.
+                <p className="text-gray-600 font-sans leading-relaxed">
+                  Complete the form and our team will get back to you to discuss
+                  your requirements and determine the best way forward.
                 </p>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName" className="font-sans">
-                        First Name *
-                      </Label>
-                      <Input
-                        id="firstName"
-                        placeholder="Enter your first name"
-                        required
-                      />
+                      <Label htmlFor="firstName">First Name *</Label>
+                      <Input placeholder="Your first name" />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName" className="font-sans">
-                        Last Name *
-                      </Label>
-                      <Input
-                        id="lastName"
-                        placeholder="Enter your last name"
-                        required
-                      />
+                      <Label htmlFor="lastName">Last Name *</Label>
+                      <Input placeholder="Your last name" />
                     </div>
                   </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="font-sans">
-                      Email Address *
-                    </Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="Enter your email address"
-                      required
-                    />
+                    <Label htmlFor="company">Company / Business</Label>
+                    <Input placeholder="Your company or business name" />
                   </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="font-sans">
-                      Phone Number *
-                    </Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="+91 98765 43210"
-                      required
-                    />
+                    <Label htmlFor="email">Email Address *</Label>
+                    <Input type="text" placeholder="you@example.com" />
                   </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="investmentAmount" className="font-sans">
-                      Investment Amount Range
+                    <Label htmlFor="phone">Phone Number</Label>
+                    <Input type="text" placeholder="Your phone number" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="service">
+                      What can we help you with? *
                     </Label>
                     <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select investment range" />
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="25-50">
-                          ₹25 Lakhs - ₹50 Lakhs
+                        <SelectItem value="web-app-development">
+                          Web & App Development
                         </SelectItem>
-                        <SelectItem value="50-100">
-                          ₹50 Lakhs - ₹1 Crore
+                        <SelectItem value="ai-automation">
+                          AI & Automation
                         </SelectItem>
-                        <SelectItem value="100-250">
-                          ₹1 Crore - ₹2.5 Crores
+                        <SelectItem value="digital-growth">
+                          Digital Growth
                         </SelectItem>
-                        <SelectItem value="250+">₹2.5 Crores+</SelectItem>
-                        <SelectItem value="discuss">
-                          Prefer to discuss
+                        <SelectItem value="managed-technology">
+                          Managed Technology
+                        </SelectItem>
+                        <SelectItem value="technology-consulting">
+                          Technology Consulting
+                        </SelectItem>
+                        <SelectItem value="other">Something Else</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="projectStage">
+                      Where are you with the project?
+                    </Label>
+                    <Select>
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Select project stage" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="idea">I have an idea</SelectItem>
+                        <SelectItem value="planning">
+                          Planning the project
+                        </SelectItem>
+                        <SelectItem value="development">
+                          Already in development
+                        </SelectItem>
+                        <SelectItem value="existing">
+                          I have an existing system
+                        </SelectItem>
+                        <SelectItem value="improvement">
+                          I need to improve an existing system
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="services" className="font-sans">
-                      Services of Interest
-                    </Label>
+                    <Label htmlFor="budget">Estimated Budget</Label>
                     <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select primary service" />
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Select a budget range" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="portfolio-management">
-                          Portfolio Management
+                        <SelectItem value="under-1m">
+                          Under ₦1 million
                         </SelectItem>
-                        <SelectItem value="wealth-planning">
-                          Wealth Planning
+                        <SelectItem value="1m-5m">
+                          ₦1 million – ₦5 million
                         </SelectItem>
-                        <SelectItem value="risk-assessment">
-                          Risk Assessment
+                        <SelectItem value="5m-10m">
+                          ₦5 million – ₦10 million
                         </SelectItem>
-                        <SelectItem value="tax-optimization">
-                          Tax Optimization
-                        </SelectItem>
-                        <SelectItem value="multiple">
-                          Multiple Services
+                        <SelectItem value="10m-plus">₦10 million+</SelectItem>
+                        <SelectItem value="not-sure">
+                          I'm not sure yet
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="preferredTime" className="font-sans">
-                      Preferred Meeting Time
-                    </Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select preferred time" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="morning">
-                          Morning (9 AM - 12 PM)
-                        </SelectItem>
-                        <SelectItem value="afternoon">
-                          Afternoon (12 PM - 4 PM)
-                        </SelectItem>
-                        <SelectItem value="evening">
-                          Evening (4 PM - 7 PM)
-                        </SelectItem>
-                        <SelectItem value="flexible">Flexible</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="meetingType" className="font-sans">
-                      Meeting Preference
-                    </Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select meeting type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="in-person">
-                          In-Person (Mumbai Office)
-                        </SelectItem>
-                        <SelectItem value="video-call">Video Call</SelectItem>
-                        <SelectItem value="phone-call">Phone Call</SelectItem>
-                        <SelectItem value="no-preference">
-                          No Preference
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="font-sans">
-                      Additional Information
+                    <Label htmlFor="message">
+                      Tell us about your project *
                     </Label>
                     <Textarea
-                      id="message"
-                      placeholder="Tell us about your investment goals, current portfolio, or any specific questions you have..."
-                      rows={4}
+                      placeholder="Describe what you want to build, the problem you're trying to solve, or the improvements you need..."
+                      rows={6}
+                      className="min-h-[200px]"
                     />
                   </div>
-
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <Checkbox id="terms" />
                     <Label
                       htmlFor="terms"
-                      className="text-sm font-sans text-gray-600"
+                      className="text-sm text-gray-600 leading-relaxed block pt-0 mt-0"
                     >
-                      I agree to the{" "}
+                      I agree to the
                       <Link
                         href="/privacy"
                         className="text-cyan-600 hover:underline"
                       >
                         Privacy Policy
-                      </Link>{" "}
-                      and consent to being contacted about PMS Investment
-                      Services.
+                      </Link>
+                      and consent to LT Technologies contacting me about my
+                      enquiry.
                     </Label>
                   </div>
-
-                  <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3 text-lg font-sans">
-                    Schedule My Consultation
+                  <Button
+                    type="submit"
+                    className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3 text-lg"
+                  >
+                    Send Project Enquiry
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </form>
               </CardContent>
             </Card>
-
-            {/* Consultation Information */}
+            {/* Information */}
             <div className="space-y-8">
-              {/* What to Expect */}
+              {/* What Happens Next */}
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-serif font-bold text-gray-900">
-                    What to Expect
+                    What Happens Next?
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-cyan-600" />
+                <CardContent className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 font-bold">
+                      1
                     </div>
                     <div>
                       <h3 className="font-serif font-bold text-gray-900 mb-1">
-                        Comprehensive Assessment
+                        We Review Your Request
                       </h3>
-                      <p className="text-gray-600 font-sans text-sm">
-                        We'll review your current financial situation,
-                        investment goals, and risk tolerance.
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        We'll review your requirements and learn more about the
+                        problem you're trying to solve.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-cyan-600" />
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 font-bold">
+                      2
                     </div>
                     <div>
                       <h3 className="font-serif font-bold text-gray-900 mb-1">
-                        Personalized Strategy
+                        We Schedule a Discussion
                       </h3>
-                      <p className="text-gray-600 font-sans text-sm">
-                        Receive tailored investment recommendations based on
-                        your unique circumstances.
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        We'll arrange a convenient time to discuss your
+                        requirements, goals, timeline, and priorities.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-cyan-600" />
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 font-bold">
+                      3
                     </div>
                     <div>
                       <h3 className="font-serif font-bold text-gray-900 mb-1">
-                        No Obligation
+                        We Recommend a Solution
                       </h3>
-                      <p className="text-gray-600 font-sans text-sm">
-                        This consultation is completely free with no commitment
-                        required.
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        Based on your needs, we'll recommend an approach,
+                        technology stack, scope, and potential next steps.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 font-bold">
+                      4
+                    </div>
+                    <div>
+                      <h3 className="font-serif font-bold text-gray-900 mb-1">
+                        We Build & Deliver
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        Once we agree on the scope, our team turns the plan into
+                        a reliable, scalable solution.
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Contact Information */}
+              {/* Services */}
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-serif font-bold text-gray-900">
-                    Contact Information
+                    What We Can Help With
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center">
-                      <Phone className="h-5 w-5 text-cyan-600" />
-                    </div>
-                    <div>
-                      <p className="font-serif font-bold text-gray-900">
-                        Phone
-                      </p>
-                      <p className="text-gray-600 font-sans">+91 98765 43210</p>
-                    </div>
+                <CardContent>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {[
+                      "Web Applications",
+                      "Mobile Applications",
+                      "Business Software",
+                      "AI Solutions",
+                      "Process Automation",
+                      "API Development",
+                      "Cloud Solutions",
+                      "System Modernisation",
+                    ].map((item) => (
+                      <div
+                        key={item}
+                        className="flex items-center gap-2 text-gray-700"
+                      >
+                        <CheckCircle className="h-5 w-5 text-cyan-600 shrink-0" />
+                        <span className="font-sans text-sm">{item}</span>
+                      </div>
+                    ))}
                   </div>
-                  <div className="flex items-center space-x-4">
+                </CardContent>
+              </Card>
+              {/* Contact */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-serif font-bold text-gray-900">
+                    Contact Us
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-5">
+                  <div className="flex items-center gap-4">
                     <div className="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center">
                       <Mail className="h-5 w-5 text-cyan-600" />
                     </div>
@@ -323,80 +318,45 @@ export default function ConsultationPage() {
                         Email
                       </p>
                       <p className="text-gray-600 font-sans">
-                        consultation@pmsinvestment.com
+                        hello@lttechnologies.com
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center">
+                      <Phone className="h-5 w-5 text-cyan-600" />
+                    </div>
+                    <div>
+                      <p className="font-serif font-bold text-gray-900">
+                        Phone
+                      </p>
+                      <p className="text-gray-600 font-sans">
+                        +234 XXX XXX XXXX
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
                     <div className="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center">
                       <MapPin className="h-5 w-5 text-cyan-600" />
                     </div>
                     <div>
                       <p className="font-serif font-bold text-gray-900">
-                        Office
+                        Location
                       </p>
-                      <p className="text-gray-600 font-sans">
-                        Nariman Point, Mumbai 400021
-                      </p>
+                      <p className="text-gray-600 font-sans"> Nigeria </p>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center gap-4">
                     <div className="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center">
                       <Clock className="h-5 w-5 text-cyan-600" />
                     </div>
                     <div>
                       <p className="font-serif font-bold text-gray-900">
-                        Hours
+                        Response Time
                       </p>
                       <p className="text-gray-600 font-sans">
-                        Mon-Fri: 9 AM - 7 PM
+                        Usually within one business day
                       </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Quick Stats */}
-              <Card className="border-0 shadow-lg bg-gradient-to-br from-cyan-50 to-amber-50">
-                <CardContent className="pt-6">
-                  <div className="text-center space-y-4">
-                    <TrendingUp className="h-12 w-12 text-cyan-600 mx-auto" />
-                    <h3 className="text-xl font-serif font-bold text-gray-900">
-                      Why Choose Us?
-                    </h3>
-                    <div className="grid grid-cols-2 gap-4 text-center">
-                      <div>
-                        <div className="text-2xl font-serif font-black text-cyan-600">
-                          20+
-                        </div>
-                        <div className="text-sm text-gray-600 font-sans">
-                          Years Experience
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-serif font-black text-cyan-600">
-                          ₹500Cr+
-                        </div>
-                        <div className="text-sm text-gray-600 font-sans">
-                          Assets Managed
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-serif font-black text-cyan-600">
-                          200+
-                        </div>
-                        <div className="text-sm text-gray-600 font-sans">
-                          Happy Clients
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-serif font-black text-cyan-600">
-                          15.2%
-                        </div>
-                        <div className="text-sm text-gray-600 font-sans">
-                          Avg. Returns
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -405,8 +365,7 @@ export default function ConsultationPage() {
           </div>
         </div>
       </section>
-
-      {/* FAQ Section */}
+      {/* FAQ */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -414,59 +373,92 @@ export default function ConsultationPage() {
               Consultation FAQs
             </h2>
             <p className="text-lg text-gray-600 font-sans">
-              Common questions about our consultation process.
+              A few things you may want to know before getting started.
             </p>
           </div>
           <div className="space-y-6">
             <Card className="border-0 shadow-lg">
               <CardContent className="p-6">
                 <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                  How long is the consultation?
+                  Do I need a detailed specification before contacting you?
                 </h3>
-                <p className="text-gray-600 font-sans">
-                  Initial consultations typically last 45-60 minutes, giving us
-                  enough time to understand your needs and provide meaningful
-                  insights.
+                <p className="text-gray-600 font-sans leading-relaxed">
+                  No. You can come to us with an idea, a business problem, or
+                  even an existing application that needs improvement. We can
+                  help define the requirements and technical approach.
                 </p>
               </CardContent>
             </Card>
             <Card className="border-0 shadow-lg">
               <CardContent className="p-6">
                 <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                  What should I bring to the consultation?
+                  Can you work with an existing application?
                 </h3>
-                <p className="text-gray-600 font-sans">
-                  Please bring recent investment statements, tax returns,
-                  insurance policies, and any financial documents that provide a
-                  complete picture of your current situation.
+                <p className="text-gray-600 font-sans leading-relaxed">
+                  Yes. We can review existing applications, identify technical
+                  issues, improve performance, add features, modernise the
+                  architecture, or take over ongoing development.
                 </p>
               </CardContent>
             </Card>
             <Card className="border-0 shadow-lg">
               <CardContent className="p-6">
                 <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                  Is there any cost for the consultation?
+                  Do you build mobile applications?
                 </h3>
-                <p className="text-gray-600 font-sans">
-                  No, the initial consultation is completely complimentary. We
-                  believe in demonstrating our value before asking for your
-                  business.
+                <p className="text-gray-600 font-sans leading-relaxed">
+                  Yes. Mobile applications can be developed as part of a new
+                  product or integrated with an existing web platform and
+                  backend.
                 </p>
               </CardContent>
             </Card>
             <Card className="border-0 shadow-lg">
               <CardContent className="p-6">
                 <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
-                  What happens after the consultation?
+                  How do you determine project cost?
                 </h3>
-                <p className="text-gray-600 font-sans">
-                  We'll provide you with a detailed proposal outlining our
-                  recommended strategy, fee structure, and next steps. You'll
-                  have time to review everything before making any decisions.
+                <p className="text-gray-600 font-sans leading-relaxed">
+                  Project pricing depends on the scope, complexity, technology,
+                  integrations, timeline, and ongoing support requirements. We
+                  discuss these factors before providing a proposal.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
+                  Can you sign an NDA?
+                </h3>
+                <p className="text-gray-600 font-sans leading-relaxed">
+                  Yes. If your project involves confidential business
+                  information or a proprietary product idea, we can discuss
+                  appropriate confidentiality arrangements.
                 </p>
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-cyan-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-serif font-black text-white mb-4">
+            Have an Idea? Let's Talk.
+          </h2>
+          <p className="text-xl text-cyan-100 mb-8 font-sans">
+            Whether you're starting from scratch or improving an existing
+            system, we're ready to help you turn your technology goals into
+            reality.
+          </p>
+          <Link href="#consultation-form">
+            <Button
+              size="lg"
+              className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-4 text-lg"
+            >
+              Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

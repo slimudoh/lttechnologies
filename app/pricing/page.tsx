@@ -1,414 +1,214 @@
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, X, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import type { Metadata } from "next";
+import { PricingModels } from "@/components/pricing/PricingModels";
+import { PricingServices } from "@/components/pricing/PricingServices";
+import { ProjectFactors } from "@/components/pricing/ProjectFactors";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Pricing | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies",
+  },
+  description:
+    "Explore flexible software development, cloud, AI, consulting, and dedicated development pricing from LT Technologies.",
+};
 
 export default function PricingPage() {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-gray-50 via-white to-cyan-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="mb-5 bg-cyan-100 text-cyan-700 hover:bg-cyan-100">
+              Flexible Engagement Models
+            </Badge>
             <h1 className="text-5xl md:text-6xl font-serif font-black text-gray-900 mb-6">
-              Transparent <span className="text-cyan-600">Pricing</span>
+              Simple, Transparent
+              <span className="text-cyan-600">Pricing</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-sans">
-              Choose the plan that best fits your investment goals. No hidden
-              fees, no surprises - just transparent pricing aligned with your
-              success.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans leading-relaxed">
+              Every business and software project is different. We offer
+              flexible engagement models designed around your requirements,
+              budget, timeline, and long-term goals.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-cyan-600 hover:bg-cyan-700 text-white px-8"
+                >
+                  Get a Project Estimate
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link href="/consultation">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 border-gray-300"
+                >
+                  Book a Consultation
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing Plans */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <Card className="border-2 border-gray-200 hover:border-cyan-600 transition-colors">
-              <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-serif font-bold">
-                  Essential
-                </CardTitle>
-                <CardDescription className="font-sans text-lg">
-                  Perfect for growing portfolios
-                </CardDescription>
-                <div className="text-5xl font-serif font-black text-cyan-600 mt-6">
-                  2.5%
-                </div>
-                <div className="text-gray-600 font-sans">
-                  Annual management fee
-                </div>
-                <div className="text-sm text-gray-500 font-sans mt-2">
-                  No performance fees
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="text-center">
-                  <div className="text-2xl font-serif font-bold text-gray-900 mb-2">
-                    ₹25 Lakhs
-                  </div>
-                  <div className="text-gray-600 font-sans">
-                    Minimum investment
-                  </div>
-                </div>
+      {/* PricingModels */}
+      <PricingModels />
 
-                <div className="space-y-4">
-                  <h4 className="font-serif font-bold text-gray-900">
-                    What's Included:
-                  </h4>
-                  <ul className="space-y-3 font-sans">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Quarterly portfolio reviews
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      24/7 online portfolio access
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Email support (48-hour response)
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Basic tax reporting
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Diversified equity portfolio
-                    </li>
-                    <li className="flex items-center text-gray-400">
-                      <X className="h-5 w-5 text-gray-400 mr-3 flex-shrink-0" />
-                      Dedicated relationship manager
-                    </li>
-                    <li className="flex items-center text-gray-400">
-                      <X className="h-5 w-5 text-gray-400 mr-3 flex-shrink-0" />
-                      Alternative investments
-                    </li>
-                  </ul>
-                </div>
+      {/* Services & Starting Prices */}
+      <PricingServices />
 
-                <Link href="/contact" className="block">
-                  <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-cyan-600 relative shadow-xl">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white px-4 py-1">
-                Most Popular
-              </Badge>
-              <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-serif font-bold">
-                  Premium
-                </CardTitle>
-                <CardDescription className="font-sans text-lg">
-                  For serious investors
-                </CardDescription>
-                <div className="text-5xl font-serif font-black text-cyan-600 mt-6">
-                  2.0%
-                </div>
-                <div className="text-gray-600 font-sans">
-                  Annual management fee
-                </div>
-                <div className="text-sm text-gray-500 font-sans mt-2">
-                  + 20% performance fee above 12% returns
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="text-center">
-                  <div className="text-2xl font-serif font-bold text-gray-900 mb-2">
-                    ₹50 Lakhs
-                  </div>
-                  <div className="text-gray-600 font-sans">
-                    Minimum investment
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-serif font-bold text-gray-900">
-                    What's Included:
-                  </h4>
-                  <ul className="space-y-3 font-sans">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Monthly portfolio reviews
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Dedicated relationship manager
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Priority phone support (24-hour response)
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Advanced tax optimization
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Multi-asset class portfolio
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Quarterly strategy calls
-                    </li>
-                    <li className="flex items-center text-gray-400">
-                      <X className="h-5 w-5 text-gray-400 mr-3 flex-shrink-0" />
-                      Alternative investments
-                    </li>
-                  </ul>
-                </div>
-
-                <Link href="/contact" className="block">
-                  <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-gray-200 hover:border-cyan-600 transition-colors">
-              <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-serif font-bold">
-                  Elite
-                </CardTitle>
-                <CardDescription className="font-sans text-lg">
-                  For high net worth individuals
-                </CardDescription>
-                <div className="text-5xl font-serif font-black text-cyan-600 mt-6">
-                  1.5%
-                </div>
-                <div className="text-gray-600 font-sans">
-                  Annual management fee
-                </div>
-                <div className="text-sm text-gray-500 font-sans mt-2">
-                  + 25% performance fee above 15% returns
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="text-center">
-                  <div className="text-2xl font-serif font-bold text-gray-900 mb-2">
-                    ₹1 Crore
-                  </div>
-                  <div className="text-gray-600 font-sans">
-                    Minimum investment
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-serif font-bold text-gray-900">
-                    What's Included:
-                  </h4>
-                  <ul className="space-y-3 font-sans">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Weekly portfolio monitoring
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Senior portfolio manager
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      24/7 concierge support
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Estate planning assistance
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Alternative investments access
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Monthly strategy meetings
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-cyan-600 mr-3 flex-shrink-0" />
-                      Custom investment solutions
-                    </li>
-                  </ul>
-                </div>
-
-                <Link href="/contact" className="block">
-                  <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Fee Structure Details */}
+      {/* How We Price */}
+      <ProjectFactors />
+      {/* Process */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
             <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
-              Fee Structure Details
+              From Idea to Investment
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
-              Complete transparency in our pricing with no hidden costs or
-              surprise charges.
+            <p className="text-lg text-gray-600 font-sans">
+              A straightforward process designed to give you clarity before
+              development begins.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif font-bold text-gray-900">
-                  Management Fees
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 font-sans">
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="text-gray-600">Essential Plan</span>
-                  <span className="font-bold text-cyan-600">2.5% annually</span>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {[
+              {
+                number: "01",
+                title: "Discovery",
+                description:
+                  "We understand your business, users, goals, and technical requirements.",
+              },
+              {
+                number: "02",
+                title: "Proposal",
+                description:
+                  "You receive a clear scope, timeline, deliverables, and project estimate.",
+              },
+              {
+                number: "03",
+                title: "Development",
+                description:
+                  "Our team designs, develops, tests, and iterates on your solution.",
+              },
+              {
+                number: "04",
+                title: "Launch & Support",
+                description:
+                  "We deploy your product and can continue supporting and improving it.",
+              },
+            ].map((step) => (
+              <div key={step.number} className="text-center">
+                <div className="w-14 h-14 rounded-full bg-cyan-600 text-white flex items-center justify-center mx-auto mb-5 font-bold">
+                  {step.number}
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="text-gray-600">Premium Plan</span>
-                  <span className="font-bold text-cyan-600">2.0% annually</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="text-gray-600">Elite Plan</span>
-                  <span className="font-bold text-cyan-600">1.5% annually</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-4">
-                  Management fees are calculated monthly and deducted quarterly
-                  from your portfolio.
+                <h3 className="text-xl font-serif font-bold text-gray-900 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 font-sans text-sm leading-relaxed">
+                  {step.description}
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif font-bold text-gray-900">
-                  Performance Fees
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 font-sans">
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="text-gray-600">Essential Plan</span>
-                  <span className="font-bold text-gray-900">
-                    No performance fee
-                  </span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="text-gray-600">Premium Plan</span>
-                  <span className="font-bold text-cyan-600">
-                    20% above 12% returns
-                  </span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="text-gray-600">Elite Plan</span>
-                  <span className="font-bold text-cyan-600">
-                    25% above 15% returns
-                  </span>
-                </div>
-                <p className="text-sm text-gray-500 mt-4">
-                  Performance fees are only charged when we exceed the specified
-                  benchmark returns.
-                </p>
-              </CardContent>
-            </Card>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
-      {/* Additional Costs */}
+      {/* FAQ */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif font-black text-gray-900 mb-4">
-              What's NOT Included
+            <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
+              Pricing FAQs
             </h2>
             <p className="text-lg text-gray-600 font-sans">
-              Transparency means telling you about all potential costs upfront.
+              A few things you may want to know before starting.
             </p>
           </div>
-
-          <Card className="border-0 shadow-lg">
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-4">
-                    Transaction Costs
+          <div className="space-y-5">
+            {[
+              {
+                question: "Do you have fixed prices for software projects?",
+                answer:
+                  "We provide starting prices for common services, but most software projects are quoted based on their specific requirements. This ensures you only pay for what your business actually needs.",
+              },
+              {
+                question: "How do you determine the final project cost?",
+                answer:
+                  "We review your requirements, features, integrations, design needs, technical architecture, timeline, and other project factors before preparing a detailed proposal.",
+              },
+              {
+                question: "Can I hire a developer on a monthly basis?",
+                answer:
+                  "Yes. Our dedicated development model allows you to engage individual developers or a development team on a monthly basis for ongoing product development.",
+              },
+              {
+                question: "Do you require a deposit before starting?",
+                answer:
+                  "Project payment terms depend on the engagement. For project-based work, payments are typically structured around agreed milestones so that both parties have clear expectations throughout development.",
+              },
+              {
+                question: "Do you provide ongoing support after launch?",
+                answer:
+                  "Yes. We offer maintenance and support engagements covering bug fixes, updates, monitoring, performance improvements, security updates, and ongoing development.",
+              },
+              {
+                question: "Can you work with an existing development team?",
+                answer:
+                  "Absolutely. We can integrate with your existing team and provide additional frontend, backend, DevOps, cloud, AI, or full-stack engineering capacity.",
+              },
+            ].map((faq) => (
+              <Card key={faq.question} className="border-0 shadow-md">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
+                    {faq.question}
                   </h3>
-                  <ul className="space-y-2 font-sans text-gray-600">
-                    <li>• Brokerage charges (typically 0.1-0.5%)</li>
-                    <li>• STT, stamp duty, and other statutory charges</li>
-                    <li>• Mutual fund expense ratios (if applicable)</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-4">
-                    Optional Services
-                  </h3>
-                  <ul className="space-y-2 font-sans text-gray-600">
-                    <li>• Tax filing assistance (₹10,000 annually)</li>
-                    <li>• Estate planning consultation (₹25,000)</li>
-                    <li>• Insurance review (₹5,000)</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-8 p-4 bg-cyan-50 rounded-lg">
-                <p className="text-cyan-800 font-sans text-sm">
-                  <strong>Note:</strong> All transaction costs are passed
-                  through at actual cost with no markup. We maintain complete
-                  transparency in all charges.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+                  <p className="text-gray-600 font-sans leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
-
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="py-20 bg-cyan-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-serif font-black text-white mb-4">
-            Ready to Get Started?
+          <h2 className="text-4xl md:text-5xl font-serif font-black text-white mb-5">
+            Have a Project in Mind?
           </h2>
-          <p className="text-xl text-cyan-100 mb-8 font-sans">
-            Schedule a consultation to discuss which plan is right for your
-            investment goals.
+          <p className="text-xl text-cyan-100 mb-8 font-sans max-w-2xl mx-auto">
+            Tell us what you're building. We'll help you understand the
+            approach, timeline, and investment required to bring it to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-4 text-lg"
+              >
+                Get a Free Estimate <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
             <Link href="/consultation">
               <Button
                 size="lg"
-                className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-4 text-lg font-sans"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-cyan-600 px-8 py-4 text-lg bg-transparent"
               >
-                Schedule Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Book a Consultation
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-cyan-600 px-8 py-4 text-lg font-sans bg-transparent"
-            >
-              Download Fee Schedule
-            </Button>
           </div>
         </div>
       </section>

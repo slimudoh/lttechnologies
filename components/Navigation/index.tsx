@@ -12,19 +12,27 @@ import {
   TrendingUp,
   ShieldCheck,
 } from "lucide-react";
-import { ServiceLink } from "@/components/Navigation/ServiceLink";
-import { MobileLink } from "@/components/Navigation/MobileLink";
-import { MobileSubLink } from "@/components/Navigation/MobileSubLink";
+import { ServiceLink } from "@/components/navigation/ServiceLink";
+import { MobileLink } from "@/components/navigation/MobileLink";
+import { MobileSubLink } from "@/components/navigation/MobileSubLink";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
+  const pathname = usePathname();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
+  const [activeRoute, setActiveRoute] = useState(pathname);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsServicesOpen(false);
   };
+
+  useEffect(() => {
+    setActiveRoute(pathname);
+  }, [pathname]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -63,10 +71,17 @@ export default function Navigation() {
           </div> */}
         </Link>
         {/* Desktop Navigation */}
+
         <div className="hidden items-center gap-8 md:flex">
           <Link
+            href="/"
+            className={`text-sm  transition-colors hover:text-slate-950 ${activeRoute === "/" ? "font-bold text-slate-950" : "font-medium text-slate-600"}`}
+          >
+            Home
+          </Link>
+          <Link
             href="/about"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+            className={`text-sm  transition-colors hover:text-slate-950 ${activeRoute === "/about" ? " font-bold text-slate-950" : "font-medium text-slate-600"}`}
           >
             About
           </Link>
@@ -75,11 +90,12 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => setIsServicesOpen((prev) => !prev)}
-              className="flex items-center gap-1.5 text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+              className={`flex items-center gap-1.5 text-sm   transition-colors hover:text-slate-950  ${activeRoute.includes("/services") ? "font-bold text-slate-950" : "font-medium text-slate-600"}`}
               aria-expanded={isServicesOpen}
               aria-haspopup="true"
             >
-              Services
+              <span className="cursor-pointer">Services</span>
+
               <ChevronDown
                 className={`h-4 w-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`}
               />
@@ -130,23 +146,24 @@ export default function Navigation() {
           </div>
           <Link
             href="/work"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+            className={`text-sm  transition-colors hover:text-slate-950 ${activeRoute === "/work" ? " font-bold text-slate-950" : "font-medium text-slate-600"}`}
           >
             Work
           </Link>
           <Link
             href="/pricing"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+            className={`text-sm  transition-colors hover:text-slate-950 ${activeRoute === "/pricing" ? " font-bold text-slate-950" : "font-medium text-slate-600"}`}
           >
             Pricing
           </Link>
           <Link
-            href="/blog"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+            href="/insights"
+            className={`text-sm  transition-colors hover:text-slate-950 ${activeRoute.includes("/insights") ? " font-bold text-slate-950" : "font-medium text-slate-600"}`}
           >
             Insights
           </Link>
         </div>
+
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
           <Link href="/contact">
@@ -163,6 +180,7 @@ export default function Navigation() {
             </Button>
           </Link>
         </div>
+
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
@@ -180,11 +198,15 @@ export default function Navigation() {
           </button>
         </div>
       </div>
+
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="border-t border-slate-200 bg-white md:hidden">
           <div className="mx-auto max-w-7xl px-6 py-5">
             <div className="space-y-1">
+              <MobileLink href="/" onClick={closeMenu}>
+                Home
+              </MobileLink>
               <MobileLink href="/about" onClick={closeMenu}>
                 About
               </MobileLink>
@@ -235,7 +257,7 @@ export default function Navigation() {
               <MobileLink href="/pricing" onClick={closeMenu}>
                 Pricing
               </MobileLink>
-              <MobileLink href="/blog" onClick={closeMenu}>
+              <MobileLink href="/insights" onClick={closeMenu}>
                 Insights
               </MobileLink>
               <MobileLink href="/contact" onClick={closeMenu}>
