@@ -4,11 +4,11 @@ import { ArrowRight, Code2, Cloud, BarChart3, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { FeaturedProjects } from "@/components/work/FeaturedProjects";
-import { MoreProjects } from "@/components/work/MoreProjects";
-import { Capabilities } from "@/components/work/Capabilities";
+import FeaturedProjects from "@/components/work/FeaturedProjects";
+import MoreProjects from "@/components/work/MoreProjects";
+import Capabilities from "@/components/work/Capabilities";
 
 export const metadata: Metadata = {
   title: {

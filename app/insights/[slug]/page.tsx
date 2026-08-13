@@ -14,7 +14,7 @@ import {
 import Link from "next/link";
 import { getBlogPost, getAllBlogPosts } from "@/lib/data";
 import { notFound } from "next/navigation";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

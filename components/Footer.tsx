@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">

@@ -1,8 +1,8 @@
-import { Footer } from "@/components/Footer";
-import { Services } from "@/components/home/Services";
-import { Process } from "@/components/home/Process";
-import { Capabilities } from "@/components/home/Capabilities";
-import { Faq } from "@/components/home/Faq";
+import Footer from "@/components/Footer";
+import Services from "@/components/home/Services";
+import Process from "@/components/home/Process";
+import Capabilities from "@/components/home/Capabilities";
+import Faq from "@/components/home/Faq";
 import type { Metadata } from "next";
 import {
   ArrowRight,

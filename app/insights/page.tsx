@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight, User, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { getAllBlogPosts } from "@/lib/data";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import Image from "next/image";
 

@@ -14,7 +14,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 export default function AiAutomationPage() {
   return (

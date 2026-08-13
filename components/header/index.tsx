@@ -12,9 +12,9 @@ import {
   TrendingUp,
   ShieldCheck,
 } from "lucide-react";
-import { ServiceLink } from "@/components/header/ServiceLink";
-import { MobileLink } from "@/components/header/MobileLink";
-import { MobileSubLink } from "@/components/header/MobileSubLink";
+import ServiceLink from "@/components/header/ServiceLink";
+import MobileLink from "@/components/header/MobileLink";
+import MobileSubLink from "@/components/header/MobileSubLink";
 import { usePathname } from "next/navigation";
 
 export default function Navigation() {

@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Code2, ShieldCheck, Users } from "lucide-react";
 import Link from "next/link";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { Capabilities } from "@/components/softwareDevelopment/Capabilities";
-import { Process } from "@/components/softwareDevelopment/Process";
-import { Technology } from "@/components/softwareDevelopment/Technology";
+import Capabilities from "@/components/softwareDevelopment/Capabilities";
+import Process from "@/components/softwareDevelopment/Process";
+import Technology from "@/components/softwareDevelopment/Technology";
 
 export const metadata: Metadata = {
   title: "Custom Software Development | LT Technologies",

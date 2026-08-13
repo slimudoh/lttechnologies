@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export function MobileLink({
+export default function MobileLink({
   href,
   children,
   onClick,

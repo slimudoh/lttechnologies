@@ -49,7 +49,7 @@ const capabilities = [
   },
 ];
 
-export function Capabilities() {
+export default function Capabilities() {
   return (
     <section className="py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

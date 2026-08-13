@@ -8,7 +8,7 @@ import { projects } from "@/lib/data";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 
-export function FeaturedProjects() {
+export default function FeaturedProjects() {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (

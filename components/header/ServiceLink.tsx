@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export function ServiceLink({
+export default function ServiceLink({
   href,
   icon,
   title,

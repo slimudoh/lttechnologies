@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Rocket } from "lucide-react";
 import Link from "next/link";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { Services } from "@/components/services/Services";
-import { Capabilities } from "@/components/services/Capabilities";
-import { Process } from "@/components/services/Process";
+import Services from "@/components/services/Services";
+import Capabilities from "@/components/services/Capabilities";
+import Process from "@/components/services/Process";
 
 export const metadata: Metadata = {
   title: "Services | LT Technologies",

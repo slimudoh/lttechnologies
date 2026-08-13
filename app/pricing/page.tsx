@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { PricingModels } from "@/components/pricing/PricingModels";
-import { PricingServices } from "@/components/pricing/PricingServices";
-import { ProjectFactors } from "@/components/pricing/ProjectFactors";
+import PricingModels from "@/components/pricing/PricingModels";
+import PricingServices from "@/components/pricing/PricingServices";
+import ProjectFactors from "@/components/pricing/ProjectFactors";
 
 export const metadata: Metadata = {
   title: {

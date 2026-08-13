@@ -12,7 +12,7 @@ const capabilities = [
   "Ongoing maintenance and support",
 ];
 
-export function Capabilities() {
+export default function Capabilities() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

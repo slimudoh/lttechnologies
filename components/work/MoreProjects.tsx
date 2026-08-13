@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
-export function MoreProjects() {
+export default function MoreProjects() {
   const otherProjects = projects.filter((project) => !project.featured);
 
   return (
