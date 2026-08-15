@@ -11,7 +11,7 @@ export default function MissionVision() {
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-600">
             What Drives Us
           </p>
-          <h2 className="mb-5 text-4xl font-black tracking-tight text-slate-900">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Building technology with purpose.
           </h2>
           <p className="text-lg leading-8 text-slate-600">

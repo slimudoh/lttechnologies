@@ -11,7 +11,7 @@ export default function CoreValues() {
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-600">
             Our Values
           </p>
-          <h2 className="mb-5 text-4xl font-black tracking-tight text-slate-900">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             How we work
           </h2>
           <p className="text-lg leading-8 text-slate-600">
@@ -20,7 +20,7 @@ export default function CoreValues() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <Card className="border border-slate-200 shadow-sm transition-shadow hover:shadow-lg">
+          <Card className="border border-slate-200 shadow-sm transition-shadow">
             <CardHeader className="p-8 pb-4">
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-100">
                 <Handshake className="h-7 w-7 text-cyan-600" />
@@ -36,7 +36,7 @@ export default function CoreValues() {
               </p>
             </CardContent>
           </Card>
-          <Card className="border border-slate-200 shadow-sm transition-shadow hover:shadow-lg">
+          <Card className="border border-slate-200 shadow-sm transition-shadow">
             <CardHeader className="p-8 pb-4">
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-100">
                 <CheckCircle className="h-7 w-7 text-cyan-600" />
@@ -52,7 +52,7 @@ export default function CoreValues() {
               </p>
             </CardContent>
           </Card>
-          <Card className="border border-slate-200 shadow-sm transition-shadow hover:shadow-lg">
+          <Card className="border border-slate-200 shadow-sm transition-shadow">
             <CardHeader className="p-8 pb-4">
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-100">
                 <Users className="h-7 w-7 text-cyan-600" />

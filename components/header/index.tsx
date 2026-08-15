@@ -162,20 +162,18 @@ export default function Navigation() {
           >
             Insights
           </Link>
+          <Link
+            href="/contact"
+            className={`text-sm  transition-colors hover:text-slate-950 ${activeRoute.includes("/contact") ? " font-bold text-slate-950" : "font-medium text-slate-600"}`}
+          >
+            Contact
+          </Link>
         </div>
 
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
-          <Link href="/contact">
-            <Button
-              variant="outline"
-              className="rounded-full border-slate-200 px-5 text-sm font-semibold text-slate-700 hover:bg-slate-50 cursor-pointer"
-            >
-              Contact
-            </Button>
-          </Link>
           <Link href="/consultation">
-            <Button className="rounded-full bg-slate-950 px-5 text-sm font-semibold text-white shadow-lg shadow-slate-950/10 hover:bg-slate-800 cursor-pointer">
+            <Button className="rounded-full bg-cyan-600 px-5 text-sm font-semibold text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
               Book a Consultation
             </Button>
           </Link>
@@ -266,7 +264,7 @@ export default function Navigation() {
             </div>
             <div className="mt-5 border-t border-slate-100 pt-5">
               <Link href="/consultation" onClick={closeMenu}>
-                <Button className="w-full rounded-xl bg-slate-950 py-6 text-base font-semibold text-white hover:bg-slate-800 ">
+                <Button className="w-full rounded-xl bg-cyan-600 py-6 text-base font-semibold text-white hover:bg-cyan-600/90 ">
                   Book a Consultation
                 </Button>
               </Link>

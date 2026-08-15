@@ -60,7 +60,7 @@ export default function PricingServices() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Our Services & Starting Prices
           </h2>
           <p className="text-lg text-gray-600 font-sans">
@@ -75,7 +75,7 @@ export default function PricingServices() {
             return (
               <Card
                 key={service.title}
-                className="border-0 shadow-md hover:shadow-xl transition-shadow"
+                className="border-0 shadow-md transition-shadow"
               >
                 <CardContent className="p-7">
                   <div className="flex items-start justify-between gap-4 mb-5">
@@ -86,7 +86,7 @@ export default function PricingServices() {
                       {service.price}
                     </span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl  font-bold text-gray-900 mb-3">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 font-sans leading-relaxed">

@@ -11,7 +11,7 @@ export default function OurApproach() {
             <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-600">
               Our Approach
             </p>
-            <h2 className="mb-6 text-4xl font-black tracking-tight text-slate-900">
+            <h2 className="text-4xl  font-bold text-gray-900 mb-4">
               From business problem to working solution.
             </h2>
             <p className="mb-8 text-lg leading-8 text-slate-600">

@@ -11,7 +11,7 @@ export default function ServicesOverview() {
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-cyan-600">
             What We Do
           </p>
-          <h2 className="mb-5 text-4xl font-black tracking-tight text-slate-900">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Technology services for modern businesses
           </h2>
           <p className="text-lg leading-8 text-slate-600">
@@ -51,7 +51,7 @@ export default function ServicesOverview() {
             return (
               <Card
                 key={service.title}
-                className="border border-slate-200 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                className="border border-slate-200 shadow-sm transition-all"
               >
                 <CardHeader className="p-6 pb-3">
                   <Icon className="mb-4 h-8 w-8 text-cyan-600" />

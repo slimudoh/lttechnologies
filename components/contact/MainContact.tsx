@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, CheckCircle, MessageSquare, Users } from "lucide-react";
+import { CheckCircle, MessageSquare, Users } from "lucide-react";
 
 export default function MainContact() {
   return (
@@ -12,7 +12,7 @@ export default function MainContact() {
             <p className="text-cyan-600 font-semibold uppercase tracking-wider text-sm mb-3">
               Start a Conversation
             </p>
-            <h2 className="text-4xl font-serif font-black text-gray-900 mb-6">
+            <h2 className="text-4xl  font-bold text-gray-900 mb-4">
               Tell Us About Your Project
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -26,7 +26,7 @@ export default function MainContact() {
                   <MessageSquare className="h-5 w-5 text-cyan-600" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-gray-900 mb-1">
+                  <h3 className=" font-bold text-gray-900 mb-1">
                     Discuss Your Requirements
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -40,7 +40,7 @@ export default function MainContact() {
                   <Users className="h-5 w-5 text-cyan-600" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-gray-900 mb-1">
+                  <h3 className=" font-bold text-gray-900 mb-1">
                     Speak With Our Team
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -54,7 +54,7 @@ export default function MainContact() {
                   <CheckCircle className="h-5 w-5 text-cyan-600" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-gray-900 mb-1">
+                  <h3 className=" font-bold text-gray-900 mb-1">
                     Get a Clear Plan
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -65,7 +65,7 @@ export default function MainContact() {
               </div>
             </div>
             <div className="mt-10 p-6 bg-white border border-gray-100 rounded-xl">
-              <h3 className="font-serif font-bold text-gray-900 mb-2">
+              <h3 className=" font-bold text-gray-900 mb-2">
                 Not sure what you need?
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -77,7 +77,6 @@ export default function MainContact() {
                 className="inline-flex items-center text-cyan-600 font-medium hover:text-cyan-700"
               >
                 Explore our services
-                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
           </div>

@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
@@ -16,7 +15,7 @@ export default function MoreProjects() {
       {otherProjects.map((project) => (
         <Card
           key={project.title}
-          className="group overflow-hidden border-0 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          className="group overflow-hidden border-0 bg-white shadow-md transition-all duration-300"
         >
           <div className="relative h-56 overflow-hidden bg-gray-200">
             <Image
@@ -32,7 +31,7 @@ export default function MoreProjects() {
               {project.category}
             </Badge>
 
-            <h3 className="mb-3 font-serif text-2xl font-bold text-gray-900">
+            <h3 className="mb-3  text-2xl font-bold text-gray-900">
               {project.title}
             </h3>
 
@@ -56,10 +55,7 @@ export default function MoreProjects() {
               variant="outline"
               className="w-fit border-cyan-600 text-cyan-600 hover:bg-cyan-50"
             >
-              <Link href="/work/tutorshub">
-                View Case Study
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              <Link href="/work/tutorshub">View Case Study</Link>
             </Button>
           </CardContent>
         </Card>

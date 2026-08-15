@@ -8,7 +8,7 @@ export default function Process() {
           <p className="text-cyan-600 font-semibold uppercase tracking-wider text-sm mb-3">
             What Happens Next
           </p>
-          <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             A Simple Way to Get Started
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -21,7 +21,7 @@ export default function Process() {
             <div className="w-12 h-12 rounded-full bg-cyan-600 text-white flex items-center justify-center mx-auto mb-5 font-bold">
               01
             </div>
-            <h3 className="text-xl font-serif font-bold text-gray-900 mb-3">
+            <h3 className="text-xl  font-bold text-gray-900 mb-3">
               Tell Us What You Need
             </h3>
             <p className="text-gray-600 leading-relaxed">
@@ -33,7 +33,7 @@ export default function Process() {
             <div className="w-12 h-12 rounded-full bg-cyan-600 text-white flex items-center justify-center mx-auto mb-5 font-bold">
               02
             </div>
-            <h3 className="text-xl font-serif font-bold text-gray-900 mb-3">
+            <h3 className="text-xl  font-bold text-gray-900 mb-3">
               We Discuss the Solution
             </h3>
             <p className="text-gray-600 leading-relaxed">
@@ -45,7 +45,7 @@ export default function Process() {
             <div className="w-12 h-12 rounded-full bg-cyan-600 text-white flex items-center justify-center mx-auto mb-5 font-bold">
               03
             </div>
-            <h3 className="text-xl font-serif font-bold text-gray-900 mb-3">
+            <h3 className="text-xl  font-bold text-gray-900 mb-3">
               Plan the Next Step
             </h3>
             <p className="text-gray-600 leading-relaxed">

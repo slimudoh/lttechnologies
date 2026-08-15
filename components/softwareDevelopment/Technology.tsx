@@ -28,7 +28,7 @@ export default function Technology() {
               Technology Solutions
             </p>
 
-            <h2 className="text-4xl font-serif font-black text-gray-900 mb-6">
+            <h2 className="text-4xl  font-bold text-gray-900 mb-4">
               From an idea to a production-ready platform.
             </h2>
 
@@ -53,9 +53,7 @@ export default function Technology() {
               <Card className="border-0 shadow-lg mt-8">
                 <CardContent className="p-6">
                   <Cloud className="h-8 w-8 text-cyan-600 mb-4" />
-                  <h3 className="font-serif font-bold text-gray-900 mb-2">
-                    Cloud Ready
-                  </h3>
+                  <h3 className=" font-bold text-gray-900 mb-2">Cloud Ready</h3>
                   <p className="text-sm text-gray-600">
                     Applications designed for modern infrastructure and scalable
                     deployment.
@@ -66,9 +64,7 @@ export default function Technology() {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <ShieldCheck className="h-8 w-8 text-cyan-600 mb-4" />
-                  <h3 className="font-serif font-bold text-gray-900 mb-2">
-                    Secure
-                  </h3>
+                  <h3 className=" font-bold text-gray-900 mb-2">Secure</h3>
                   <p className="text-sm text-gray-600">
                     Security considered throughout architecture, development and
                     deployment.
@@ -79,9 +75,7 @@ export default function Technology() {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <Database className="h-8 w-8 text-cyan-600 mb-4" />
-                  <h3 className="font-serif font-bold text-gray-900 mb-2">
-                    Data Driven
-                  </h3>
+                  <h3 className=" font-bold text-gray-900 mb-2">Data Driven</h3>
                   <p className="text-sm text-gray-600">
                     Structured data systems that support reporting, integrations
                     and informed decisions.
@@ -92,9 +86,7 @@ export default function Technology() {
               <Card className="border-0 shadow-lg mt-8">
                 <CardContent className="p-6">
                   <Gauge className="h-8 w-8 text-cyan-600 mb-4" />
-                  <h3 className="font-serif font-bold text-gray-900 mb-2">
-                    Performance
-                  </h3>
+                  <h3 className=" font-bold text-gray-900 mb-2">Performance</h3>
                   <p className="text-sm text-gray-600">
                     Fast and optimized applications built with growth and
                     reliability in mind.

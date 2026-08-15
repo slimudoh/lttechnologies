@@ -12,14 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  CheckCircle,
-  Clock,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { CheckCircle, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { Textarea } from "../ui/textarea";
 import { Checkbox } from "@radix-ui/react-checkbox";
 
@@ -31,7 +24,7 @@ export default function MainConsultation() {
           {/* Form */}
           <Card className="border-0 shadow-xl">
             <CardHeader className="pb-4">
-              <CardTitle className="text-3xl font-serif font-bold text-gray-900">
+              <CardTitle className="text-3xl  font-bold text-gray-900">
                 Tell Us About Your Project
               </CardTitle>
               <p className="text-gray-600 font-sans leading-relaxed">
@@ -159,11 +152,10 @@ export default function MainConsultation() {
                   </Label>
                 </div>
                 <Button
-                  type="submit"
-                  className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3 text-lg cursor-pointer"
+                  size="lg"
+                  className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3  cursor-pointer"
                 >
                   Send Project Enquiry
-                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </form>
             </CardContent>
@@ -173,7 +165,7 @@ export default function MainConsultation() {
             {/* What Happens Next */}
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-2xl font-serif font-bold text-gray-900">
+                <CardTitle className="text-2xl  font-bold text-gray-900">
                   What Happens Next?
                 </CardTitle>
               </CardHeader>
@@ -183,7 +175,7 @@ export default function MainConsultation() {
                     1
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-gray-900 mb-1">
+                    <h3 className=" font-bold text-gray-900 mb-1">
                       We Review Your Request
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -197,7 +189,7 @@ export default function MainConsultation() {
                     2
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-gray-900 mb-1">
+                    <h3 className=" font-bold text-gray-900 mb-1">
                       We Schedule a Discussion
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -211,7 +203,7 @@ export default function MainConsultation() {
                     3
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-gray-900 mb-1">
+                    <h3 className=" font-bold text-gray-900 mb-1">
                       We Recommend a Solution
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -225,7 +217,7 @@ export default function MainConsultation() {
                     4
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold text-gray-900 mb-1">
+                    <h3 className=" font-bold text-gray-900 mb-1">
                       We Build & Deliver
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -239,7 +231,7 @@ export default function MainConsultation() {
             {/* Services */}
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-2xl font-serif font-bold text-gray-900">
+                <CardTitle className="text-2xl  font-bold text-gray-900">
                   What We Can Help With
                 </CardTitle>
               </CardHeader>
@@ -269,7 +261,7 @@ export default function MainConsultation() {
             {/* Contact */}
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-2xl font-serif font-bold text-gray-900">
+                <CardTitle className="text-2xl  font-bold text-gray-900">
                   Contact Us
                 </CardTitle>
               </CardHeader>
@@ -279,7 +271,7 @@ export default function MainConsultation() {
                     <Mail className="h-5 w-5 text-cyan-600" />
                   </div>
                   <div>
-                    <p className="font-serif font-bold text-gray-900">Email</p>
+                    <p className=" font-bold text-gray-900">Email</p>
                     <p className="text-gray-600 font-sans">
                       hello@lttechnologies.com
                     </p>
@@ -290,7 +282,7 @@ export default function MainConsultation() {
                     <Phone className="h-5 w-5 text-cyan-600" />
                   </div>
                   <div>
-                    <p className="font-serif font-bold text-gray-900">Phone</p>
+                    <p className=" font-bold text-gray-900">Phone</p>
                     <p className="text-gray-600 font-sans">+234 XXX XXX XXXX</p>
                   </div>
                 </div>
@@ -299,9 +291,7 @@ export default function MainConsultation() {
                     <MapPin className="h-5 w-5 text-cyan-600" />
                   </div>
                   <div>
-                    <p className="font-serif font-bold text-gray-900">
-                      Location
-                    </p>
+                    <p className=" font-bold text-gray-900">Location</p>
                     <p className="text-gray-600 font-sans"> Nigeria </p>
                   </div>
                 </div>
@@ -310,9 +300,7 @@ export default function MainConsultation() {
                     <Clock className="h-5 w-5 text-cyan-600" />
                   </div>
                   <div>
-                    <p className="font-serif font-bold text-gray-900">
-                      Response Time
-                    </p>
+                    <p className=" font-bold text-gray-900">Response Time</p>
                     <p className="text-gray-600 font-sans">
                       Usually within one business day
                     </p>

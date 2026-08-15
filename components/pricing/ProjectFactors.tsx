@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 import {
   Card,
@@ -32,7 +32,7 @@ export default function ProjectFactors() {
             <Badge className="mb-4 bg-cyan-100 text-cyan-700 hover:bg-cyan-100">
               No One-Size-Fits-All Pricing
             </Badge>
-            <h2 className="text-4xl font-serif font-black text-gray-900 mb-6">
+            <h2 className="text-4xl  font-bold text-gray-900 mb-6">
               Your Project Determines the Price
             </h2>
             <p className="text-lg text-gray-600 font-sans leading-relaxed mb-6">
@@ -48,13 +48,12 @@ export default function ProjectFactors() {
             <Link href="/contact">
               <Button className="mt-8 bg-cyan-600 hover:bg-cyan-700 text-white">
                 Discuss Your Requirements
-                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
           <Card className="border-0 shadow-xl bg-gray-50">
             <CardHeader>
-              <CardTitle className="text-2xl font-serif font-bold text-gray-900">
+              <CardTitle className="text-2xl  font-bold text-gray-900">
                 What Determines Your Project Cost?
               </CardTitle>
               <CardDescription className="font-sans">

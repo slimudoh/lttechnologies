@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
 import Image from "next/image";
-import { ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 export default function FeaturedProjects() {
   const featuredProjects = projects.filter((project) => project.featured);
@@ -37,7 +37,7 @@ export default function FeaturedProjects() {
                 {project.category}
               </Badge>
 
-              <h3 className="mb-4 font-serif text-3xl font-black text-gray-900 md:text-4xl">
+              <h3 className="mb-4  text-3xl font-black text-gray-900">
                 {project.title}
               </h3>
 
@@ -75,10 +75,7 @@ export default function FeaturedProjects() {
                 variant="outline"
                 className="w-fit border-cyan-600 text-cyan-600 hover:bg-cyan-50"
               >
-                <Link href="/work/tutorshub">
-                  View Case Study
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
+                <Link href="/work/tutorshub">View Case Study</Link>
               </Button>
             </CardContent>
           </div>

@@ -11,7 +11,7 @@ export default function Services() {
           <p className="text-cyan-600 font-semibold uppercase tracking-wider text-sm mb-3">
             What We Do
           </p>
-          <h2 className="text-4xl font-serif font-black text-gray-900 mb-4">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Technology Solutions for Growing Businesses
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -24,7 +24,7 @@ export default function Services() {
           <Card className="border border-gray-100 shadow-sm">
             <CardContent className="p-6">
               <Code2 className="h-8 w-8 text-cyan-600 mb-5" />
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
+              <h3 className="text-lg  font-bold text-gray-900 mb-2">
                 Custom Software
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
@@ -36,7 +36,7 @@ export default function Services() {
           <Card className="border border-gray-100 shadow-sm">
             <CardContent className="p-6">
               <Smartphone className="h-8 w-8 text-cyan-600 mb-5" />
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
+              <h3 className="text-lg  font-bold text-gray-900 mb-2">
                 Web & Mobile
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
@@ -48,7 +48,7 @@ export default function Services() {
           <Card className="border border-gray-100 shadow-sm">
             <CardContent className="p-6">
               <Bot className="h-8 w-8 text-cyan-600 mb-5" />
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
+              <h3 className="text-lg  font-bold text-gray-900 mb-2">
                 AI & Automation
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
@@ -60,7 +60,7 @@ export default function Services() {
           <Card className="border border-gray-100 shadow-sm">
             <CardContent className="p-6">
               <Cloud className="h-8 w-8 text-cyan-600 mb-5" />
-              <h3 className="text-lg font-serif font-bold text-gray-900 mb-2">
+              <h3 className="text-lg  font-bold text-gray-900 mb-2">
                 Cloud & DevOps
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">

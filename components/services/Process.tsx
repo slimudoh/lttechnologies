@@ -36,7 +36,7 @@ export default function Process() {
             Our Process
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-serif font-black mb-5">
+          <h2 className="text-4xl   font-black mb-5">
             From idea to implementation.
           </h2>
 
@@ -49,13 +49,11 @@ export default function Process() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {process.map((step) => (
             <div key={step.number}>
-              <div className="text-5xl font-serif font-black text-cyan-500 mb-6">
+              <div className="text-5xl  font-black text-cyan-500 mb-6">
                 {step.number}
               </div>
 
-              <h3 className="text-2xl font-serif font-bold mb-3">
-                {step.title}
-              </h3>
+              <h3 className="text-2xl  font-bold mb-3">{step.title}</h3>
 
               <p className="text-gray-400 leading-relaxed">
                 {step.description}

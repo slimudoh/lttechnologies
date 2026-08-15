@@ -48,7 +48,7 @@ export default function Process() {
             Our Process
           </p>
 
-          <h2 className="text-4xl font-serif font-black text-gray-900 mb-5">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             A clear path from idea to impact.
           </h2>
 
@@ -67,7 +67,7 @@ export default function Process() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
+                  <h3 className="text-xl  font-bold text-gray-900 mb-2">
                     {step.title}
                   </h3>
 

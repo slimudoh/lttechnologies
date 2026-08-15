@@ -8,12 +8,12 @@ export default function ContactMethods() {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-shadow">
+          <Card className="border border-gray-100 shadow-sm transition-shadow">
             <CardContent className="p-8">
               <div className="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center mb-5">
                 <Mail className="h-6 w-6 text-cyan-600" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
+              <h3 className="text-xl  font-bold text-gray-900 mb-2">
                 Email Us
               </h3>
               <p className="text-gray-600 mb-4 leading-relaxed">
@@ -28,14 +28,12 @@ export default function ContactMethods() {
               </a>
             </CardContent>
           </Card>
-          <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-shadow">
+          <Card className="border border-gray-100 shadow-sm  transition-shadow">
             <CardContent className="p-8">
               <div className="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center mb-5">
                 <Phone className="h-6 w-6 text-cyan-600" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
-                Call Us
-              </h3>
+              <h3 className="text-xl  font-bold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Prefer to speak with someone directly? Give us a call to discuss
                 your needs.
@@ -48,12 +46,12 @@ export default function ContactMethods() {
               </a>
             </CardContent>
           </Card>
-          <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-shadow">
+          <Card className="border border-gray-100 shadow-sm  transition-shadow">
             <CardContent className="p-8">
               <div className="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center mb-5">
                 <Clock className="h-6 w-6 text-cyan-600" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">
+              <h3 className="text-xl  font-bold text-gray-900 mb-2">
                 Response Time
               </h3>
               <p className="text-gray-600 mb-4 leading-relaxed">

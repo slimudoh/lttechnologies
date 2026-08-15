@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  ArrowRight,
-  Bot,
-  CheckCircle,
-  Code2,
-  ShieldCheck,
-  TrendingUp,
-} from "lucide-react";
+import { Bot, CheckCircle, Code2, ShieldCheck, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 
@@ -84,7 +77,7 @@ export default function Services() {
             return (
               <Card
                 key={service.title}
-                className="group border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-xl"
+                className="group border-slate-200 bg-white shadow-sm transition-all duration-300  hover:border-slate-300"
               >
                 <CardHeader className="p-7">
                   <div className="flex items-start justify-between">
@@ -94,9 +87,7 @@ export default function Services() {
                     <Link
                       href={service.href}
                       className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-hover:border-cyan-200 group-hover:text-cyan-600"
-                    >
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
+                    ></Link>
                   </div>
                   <CardTitle className="mt-6 text-2xl font-bold">
                     {service.title}
@@ -122,7 +113,6 @@ export default function Services() {
                     className="mt-7 inline-flex items-center text-sm font-semibold text-slate-950 transition-colors hover:text-cyan-600"
                   >
                     Explore service
-                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </CardContent>
               </Card>

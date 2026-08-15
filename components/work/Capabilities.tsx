@@ -58,7 +58,7 @@ export default function Capabilities() {
             Our Capabilities
           </p>
 
-          <h2 className="mb-5 font-serif text-4xl font-black text-gray-900 md:text-5xl">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             More than software development.
           </h2>
 
@@ -75,14 +75,14 @@ export default function Capabilities() {
             return (
               <Card
                 key={capability.title}
-                className="border border-gray-100 shadow-sm transition-shadow hover:shadow-lg"
+                className="border border-gray-100 shadow-sm transition-shadow "
               >
                 <CardContent className="p-7">
                   <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100">
                     <Icon className="h-6 w-6 text-cyan-600" />
                   </div>
 
-                  <h3 className="mb-3 font-serif text-xl font-bold text-gray-900">
+                  <h3 className="mb-3  text-xl font-bold text-gray-900">
                     {capability.title}
                   </h3>
 

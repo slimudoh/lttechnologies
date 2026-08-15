@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  ArrowRight,
   Bot,
   CheckCircle2,
   Code2,
@@ -90,7 +89,7 @@ export default function Services() {
             What We Do
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-serif font-black text-gray-900 mb-5">
+          <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Solutions designed around your business.
           </h2>
 
@@ -108,7 +107,7 @@ export default function Services() {
             return (
               <Card
                 key={service.slug}
-                className="group border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                className="group border border-gray-100 shadow-lg transition-all duration-300"
               >
                 <CardHeader className="p-8 pb-4">
                   <div className="flex items-start justify-between">
@@ -121,7 +120,7 @@ export default function Services() {
                     </span>
                   </div>
 
-                  <CardTitle className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mt-6">
+                  <CardTitle className="text-2xl md:text-3xl  font-bold text-gray-900 mt-6">
                     {service.title}
                   </CardTitle>
 
@@ -149,7 +148,6 @@ export default function Services() {
                       className="w-full border-gray-300 hover:border-cyan-600 hover:text-cyan-600"
                     >
                       Explore Service
-                      <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                 </CardContent>
