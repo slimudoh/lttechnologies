@@ -17,7 +17,7 @@ export default function Introduction() {
           Your Digital Presence Should Drive Business
         </h2>
 
-        <p className="text-lg md:text-xl text-gray-600 font-sans leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-600  leading-relaxed">
           A website alone is not enough. Your business needs to be visible,
           discoverable and relevant to the people you want to reach. We bring
           together strategy, content, search, social media and analytics to

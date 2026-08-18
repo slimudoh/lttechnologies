@@ -9,7 +9,7 @@ export default function Process() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
+            <p className="mb-4  text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
               How We Work
             </p>
 
@@ -17,7 +17,7 @@ export default function Process() {
               From idea to impact.
             </h2>
 
-            <p className="text-lg leading-8 text-gray-300">
+            <p className="text-lg leading-8 text-gray-300 mb-8">
               Every project is different, but our approach remains focused:
               understand the problem, design the right solution, build it
               properly and continuously improve it.
@@ -26,7 +26,8 @@ export default function Process() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="mt-8 bg-cyan-600 px-8 text-white hover:bg-cyan-700"
+                variant="outline"
+                className="w-full border-slate-300 px-8 text-slate-700 hover:bg-slate-50 sm:w-auto rounded-full cursor-pointer"
               >
                 Discuss Your Project
               </Button>

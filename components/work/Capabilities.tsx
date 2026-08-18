@@ -54,7 +54,7 @@ export default function Capabilities() {
     <section className="py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <p className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600">
+          <p className="mb-4  text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600">
             Our Capabilities
           </p>
 

@@ -36,7 +36,7 @@ export default function HowItWorks() {
             How Our Managed Support Works
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             A straightforward approach to keeping your technology healthy and
             reliable.
           </p>
@@ -53,7 +53,7 @@ export default function HowItWorks() {
                 {step.title}
               </h3>
 
-              <p className="text-gray-600 font-sans leading-relaxed">
+              <p className="text-gray-600  leading-relaxed">
                 {step.description}
               </p>
             </div>

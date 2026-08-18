@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Gauge, ServerCog, Headphones } from "lucide-react";
 import Link from "next/link";
+import SubTitle from "../SubTitle";
 
 const benefits = [
   {
@@ -38,22 +39,23 @@ export default function Why() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <Badge className="bg-cyan-100 text-cyan-700 mb-4">
-              Why Managed Technology?
-            </Badge>
+            <SubTitle title="Why Managed Technology?" />
 
             <h2 className="text-4xl  font-bold text-gray-900 mb-4">
               Your Technology Should Keep Getting Better
             </h2>
 
-            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-8">
+            <p className="text-lg text-gray-600  leading-relaxed mb-8">
               Launching software is only the beginning. We provide the ongoing
               technical expertise required to keep your systems secure, stable,
               and ready for what comes next.
             </p>
 
             <Link href="/contact">
-              <Button className="bg-cyan-600 hover:bg-cyan-700 text-white">
+              <Button
+                size="lg"
+                className="w-full bg-cyan-600 px-8 text-white hover:bg-cyan-700 sm:w-auto rounded-full cursor-pointer"
+              >
                 Discuss Your Support Needs
               </Button>
             </Link>
@@ -75,7 +77,7 @@ export default function Why() {
                       {benefit.title}
                     </h3>
 
-                    <p className="text-sm text-gray-600 font-sans leading-relaxed">
+                    <p className="text-sm text-gray-600  leading-relaxed">
                       {benefit.description}
                     </p>
                   </CardContent>

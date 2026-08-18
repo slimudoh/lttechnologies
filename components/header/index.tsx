@@ -173,7 +173,7 @@ export default function Navigation() {
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
           <Link href="/consultation">
-            <Button className="rounded-full bg-cyan-600 px-5 text-sm font-semibold text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
+            <Button className="rounded-full bg-cyan-600 px-5 text-sm text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
               Book a Consultation
             </Button>
           </Link>
@@ -264,7 +264,7 @@ export default function Navigation() {
             </div>
             <div className="mt-5 border-t border-slate-100 pt-5">
               <Link href="/consultation" onClick={closeMenu}>
-                <Button className="w-full rounded-xl bg-cyan-600 py-6 text-base font-semibold text-white hover:bg-cyan-600/90 ">
+                <Button className="w-full rounded-xl bg-cyan-600 py-6 text-base text-white hover:bg-cyan-600/90 ">
                   Book a Consultation
                 </Button>
               </Link>

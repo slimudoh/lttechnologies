@@ -27,7 +27,7 @@ export default function MainConsultation() {
               <CardTitle className="text-3xl  font-bold text-gray-900">
                 Tell Us About Your Project
               </CardTitle>
-              <p className="text-gray-600 font-sans leading-relaxed">
+              <p className="text-gray-600  leading-relaxed">
                 Complete the form and our team will get back to you to discuss
                 your requirements and determine the best way forward.
               </p>
@@ -36,28 +36,37 @@ export default function MainConsultation() {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name *</Label>
+                    <Label htmlFor="firstName" className="gap-0">
+                      First Name<span className="text-red-500">*</span>
+                    </Label>
                     <Input placeholder="Your first name" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name *</Label>
+                    <Label htmlFor="lastName" className="gap-0">
+                      Last Name<span className="text-red-500">*</span>
+                    </Label>
                     <Input placeholder="Your last name" />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="company">Company / Business</Label>
+                  <Label htmlFor="company">Company/Business</Label>
                   <Input placeholder="Your company or business name" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email Address *</Label>
-                  <Input type="text" placeholder="you@example.com" />
+                  <Label htmlFor="email" className="gap-0">
+                    Email Address<span className="text-red-500">*</span>
+                  </Label>
+                  <Input type="text" placeholder="Your email address" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
                   <Input type="text" placeholder="Your phone number" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="service">What can we help you with? *</Label>
+                  <Label htmlFor="service" className="gap-0">
+                    What can we help you with?
+                    <span className="text-red-500">*</span>
+                  </Label>
                   <Select>
                     <SelectTrigger className="w-full">
                       <SelectValue placeholder="Select a service" />
@@ -127,7 +136,10 @@ export default function MainConsultation() {
                   </Select>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Tell us about your project *</Label>
+                  <Label htmlFor="message" className="gap-0">
+                    Tell us about your project
+                    <span className="text-red-500">*</span>
+                  </Label>
                   <Textarea
                     placeholder="Describe what you want to build, the problem you're trying to solve, or the improvements you need..."
                     rows={6}
@@ -252,7 +264,7 @@ export default function MainConsultation() {
                       className="flex items-center gap-2 text-gray-700"
                     >
                       <CheckCircle className="h-5 w-5 text-cyan-600 shrink-0" />
-                      <span className="font-sans text-sm">{item}</span>
+                      <span className=" text-sm">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -272,9 +284,7 @@ export default function MainConsultation() {
                   </div>
                   <div>
                     <p className=" font-bold text-gray-900">Email</p>
-                    <p className="text-gray-600 font-sans">
-                      hello@lttechnologies.com
-                    </p>
+                    <p className="text-gray-600 ">hello@lttechnologies.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -283,7 +293,7 @@ export default function MainConsultation() {
                   </div>
                   <div>
                     <p className=" font-bold text-gray-900">Phone</p>
-                    <p className="text-gray-600 font-sans">+234 XXX XXX XXXX</p>
+                    <p className="text-gray-600 ">+234 XXX XXX XXXX</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -292,7 +302,7 @@ export default function MainConsultation() {
                   </div>
                   <div>
                     <p className=" font-bold text-gray-900">Location</p>
-                    <p className="text-gray-600 font-sans"> Nigeria </p>
+                    <p className="text-gray-600 "> Nigeria </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -301,7 +311,7 @@ export default function MainConsultation() {
                   </div>
                   <div>
                     <p className=" font-bold text-gray-900">Response Time</p>
-                    <p className="text-gray-600 font-sans">
+                    <p className="text-gray-600 ">
                       Usually within one business day
                     </p>
                   </div>

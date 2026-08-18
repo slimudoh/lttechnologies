@@ -8,7 +8,7 @@ export default function Process() {
           <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             From Idea to Investment
           </h2>
-          <p className="text-lg text-gray-600 font-sans">
+          <p className="text-lg text-gray-600 ">
             A straightforward process designed to give you clarity before
             development begins.
           </p>
@@ -47,7 +47,7 @@ export default function Process() {
               <h3 className="text-xl  font-bold text-gray-900 mb-3">
                 {step.title}
               </h3>
-              <p className="text-gray-600 font-sans text-sm leading-relaxed">
+              <p className="text-gray-600  text-sm leading-relaxed">
                 {step.description}
               </p>
             </div>

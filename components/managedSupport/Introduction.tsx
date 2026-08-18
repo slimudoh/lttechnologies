@@ -19,7 +19,7 @@ export default function Introduction() {
           Technology Should Support Your Business, Not Slow It Down
         </h2>
 
-        <p className="text-xl text-gray-600 font-sans leading-relaxed">
+        <p className="text-xl text-gray-600  leading-relaxed">
           Software requires continuous attention after it is launched.
           Dependencies need updates, security threats evolve, infrastructure
           needs monitoring, and business requirements change. Our managed

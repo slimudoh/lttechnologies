@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Footer() {
   return (
@@ -32,11 +33,13 @@ export default function Footer() {
               repetitive work with modern technology and AI.
             </p>
 
-            <Link
-              href="/consultation"
-              className="mt-6 inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
-            >
-              Start a Project
+            <Link href="/consultation">
+              <Button
+                size="lg"
+                className="mt-6 inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm text-slate-950 transition hover:bg-slate-200 cursor-pointer"
+              >
+                Start a Project
+              </Button>
             </Link>
           </div>
 
@@ -205,7 +208,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="/terms"
+                href="/terms-of-service"
                 className="transition-colors hover:text-white"
               >
                 Terms of Service

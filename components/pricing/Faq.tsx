@@ -41,7 +41,7 @@ export default function Faq() {
           <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Pricing FAQs
           </h2>
-          <p className="text-lg text-gray-600 font-sans">
+          <p className="text-lg text-gray-600 ">
             A few things you may want to know before starting.
           </p>
         </div>

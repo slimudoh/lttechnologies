@@ -99,7 +99,7 @@ export default function Services() {
             Digital Growth Services
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             Practical digital services that help your business attract
             attention, build trust and generate opportunities.
           </p>
@@ -123,7 +123,7 @@ export default function Services() {
                     {service.title}
                   </CardTitle>
 
-                  <p className="text-gray-600 font-sans leading-relaxed">
+                  <p className="text-gray-600  leading-relaxed">
                     {service.description}
                   </p>
                 </CardHeader>
@@ -133,7 +133,7 @@ export default function Services() {
                     {service.features.map((feature) => (
                       <li
                         key={feature}
-                        className="flex items-center text-gray-600 font-sans"
+                        className="flex items-center text-gray-600 "
                       >
                         <CheckCircle className="h-4 w-4 text-cyan-600 mr-3 flex-shrink-0" />
                         {feature}

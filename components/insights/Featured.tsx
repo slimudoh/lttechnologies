@@ -29,7 +29,7 @@ export default function Featured() {
                   priority
                   className="object-cover"
                 />
-                <Badge className="absolute top-4 left-4 bg-cyan-600 text-white">
+                <Badge className="absolute top-4 left-4 bg-cyan-100 text-cyan-700  ">
                   {featuredPost.category}
                 </Badge>
               </div>
@@ -39,11 +39,11 @@ export default function Featured() {
                     <CardTitle className="text-2xl  font-bold text-gray-900 mb-3">
                       {featuredPost.title}
                     </CardTitle>
-                    <p className="text-gray-600 font-sans leading-relaxed">
+                    <p className="text-gray-600  leading-relaxed">
                       {featuredPost.excerpt}
                     </p>
                   </CardHeader>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500 font-sans mb-6">
+                  <div className="flex items-center space-x-4 text-sm text-gray-500  mb-6">
                     <div className="flex items-center">
                       <User className="h-4 w-4 mr-1" />
                       {featuredPost.author}
@@ -63,7 +63,7 @@ export default function Featured() {
                   </div>
                 </div>
                 <Link href={`/insights/${featuredPost.slug}`}>
-                  <Button className="bg-cyan-600 hover:bg-cyan-700 text-white">
+                  <Button className="rounded-full bg-cyan-600 px-5 text-sm text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
                     Read Full Article
                   </Button>
                 </Link>

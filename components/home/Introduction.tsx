@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Introduction() {
@@ -28,12 +29,16 @@ export default function Introduction() {
               scalable, and capable of creating measurable value for your
               business.
             </p>
-            <Link
-              href="/about"
-              className="mt-7 inline-flex items-center font-semibold text-slate-950 hover:text-cyan-600"
-            >
-              Learn more about us
-            </Link>
+
+            <div className="text-start mt-10">
+              <Link
+                href="/about"
+                className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700"
+              >
+                Learn more about us
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function Automation() {
               Automate More. Work Smarter.
             </h2>
 
-            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-8">
+            <p className="text-lg text-gray-600  leading-relaxed mb-8">
               AI should not be added to your business simply because it is
               trending. We focus on practical applications that solve real
               business problems, improve productivity, and deliver measurable
@@ -28,7 +28,7 @@ export default function Automation() {
                     Identify Opportunities
                   </h3>
 
-                  <p className="text-gray-600 font-sans">
+                  <p className="text-gray-600 ">
                     We examine your existing processes and identify areas where
                     AI and automation can have the greatest impact.
                   </p>
@@ -43,7 +43,7 @@ export default function Automation() {
                     Build the Right Solution
                   </h3>
 
-                  <p className="text-gray-600 font-sans">
+                  <p className="text-gray-600 ">
                     We design and develop AI solutions around your actual
                     business requirements and workflows.
                   </p>
@@ -58,7 +58,7 @@ export default function Automation() {
                     Measure the Impact
                   </h3>
 
-                  <p className="text-gray-600 font-sans">
+                  <p className="text-gray-600 ">
                     We focus on practical outcomes such as reduced manual work,
                     faster processes, and better customer experiences.
                   </p>

@@ -9,7 +9,7 @@ export default function Process() {
             Our AI & Automation Process
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             From identifying an opportunity to deploying and improving your
             solution.
           </p>
@@ -51,7 +51,7 @@ export default function Process() {
                 {step.title}
               </h3>
 
-              <p className="text-gray-600 font-sans">{step.description}</p>
+              <p className="text-gray-600 ">{step.description}</p>
             </div>
           ))}
         </div>

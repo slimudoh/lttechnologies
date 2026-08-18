@@ -20,7 +20,7 @@ export default function Solutions() {
             Practical AI for Your Business
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             We help businesses identify where AI can create real value and build
             solutions that fit naturally into existing operations.
           </p>
@@ -40,12 +40,12 @@ export default function Solutions() {
             </CardHeader>
 
             <CardContent>
-              <p className="text-gray-600 font-sans text-center mb-4">
+              <p className="text-gray-600  text-center mb-4">
                 Build intelligent assistants that help employees and customers
                 find information, complete tasks, and get answers faster.
               </p>
 
-              <ul className="space-y-2 font-sans text-gray-600 text-sm">
+              <ul className="space-y-2  text-gray-600 text-sm">
                 {[
                   "Internal AI assistants",
                   "Knowledge assistants",
@@ -72,12 +72,12 @@ export default function Solutions() {
             </CardHeader>
 
             <CardContent>
-              <p className="text-gray-600 font-sans text-center mb-4">
+              <p className="text-gray-600  text-center mb-4">
                 Give your customers instant, intelligent support through
                 AI-powered conversational experiences.
               </p>
 
-              <ul className="space-y-2 font-sans text-gray-600 text-sm">
+              <ul className="space-y-2  text-gray-600 text-sm">
                 {[
                   "Customer support chatbots",
                   "Website AI chat",
@@ -106,12 +106,12 @@ export default function Solutions() {
             </CardHeader>
 
             <CardContent>
-              <p className="text-gray-600 font-sans text-center mb-4">
+              <p className="text-gray-600  text-center mb-4">
                 Automate repetitive business processes so your team can focus on
                 higher-value work.
               </p>
 
-              <ul className="space-y-2 font-sans text-gray-600 text-sm">
+              <ul className="space-y-2  text-gray-600 text-sm">
                 {[
                   "Business process automation",
                   "Automated notifications",
@@ -140,12 +140,12 @@ export default function Solutions() {
             </CardHeader>
 
             <CardContent>
-              <p className="text-gray-600 font-sans text-center mb-4">
+              <p className="text-gray-600  text-center mb-4">
                 Add AI capabilities to the software and systems your business
                 already uses.
               </p>
 
-              <ul className="space-y-2 font-sans text-gray-600 text-sm">
+              <ul className="space-y-2  text-gray-600 text-sm">
                 {[
                   "AI API integration",
                   "Existing software integration",
@@ -174,12 +174,12 @@ export default function Solutions() {
             </CardHeader>
 
             <CardContent>
-              <p className="text-gray-600 font-sans text-center mb-4">
+              <p className="text-gray-600  text-center mb-4">
                 Turn business data into useful insights that support faster and
                 better decision-making.
               </p>
 
-              <ul className="space-y-2 font-sans text-gray-600 text-sm">
+              <ul className="space-y-2  text-gray-600 text-sm">
                 {[
                   "Data analysis",
                   "AI-powered reporting",
@@ -208,12 +208,12 @@ export default function Solutions() {
             </CardHeader>
 
             <CardContent>
-              <p className="text-gray-600 font-sans text-center mb-4">
+              <p className="text-gray-600  text-center mb-4">
                 Improve existing business processes by identifying where
                 intelligent automation can save time and reduce costs.
               </p>
 
-              <ul className="space-y-2 font-sans text-gray-600 text-sm">
+              <ul className="space-y-2  text-gray-600 text-sm">
                 {[
                   "Process assessment",
                   "Automation opportunities",

@@ -16,7 +16,7 @@ export default function Why() {
               Turn Digital Attention Into Real Opportunities
             </h2>
 
-            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-8">
+            <p className="text-lg text-gray-600  leading-relaxed mb-8">
               Your customers are already searching, comparing and making
               decisions online. We help position your business where those
               decisions are happening.
@@ -33,7 +33,7 @@ export default function Why() {
                     Stronger Online Presence
                   </h3>
 
-                  <p className="text-gray-600 font-sans">
+                  <p className="text-gray-600 ">
                     Make your business easier to discover and understand across
                     the digital channels that matter.
                   </p>
@@ -50,7 +50,7 @@ export default function Why() {
                     Reach The Right Audience
                   </h3>
 
-                  <p className="text-gray-600 font-sans">
+                  <p className="text-gray-600 ">
                     Focus your digital efforts on the people most likely to need
                     and value your products or services.
                   </p>
@@ -67,7 +67,7 @@ export default function Why() {
                     Sustainable Growth
                   </h3>
 
-                  <p className="text-gray-600 font-sans">
+                  <p className="text-gray-600 ">
                     Build digital systems and strategies that continue creating
                     opportunities rather than relying only on short-term
                     campaigns.
@@ -84,7 +84,7 @@ export default function Why() {
               Everything Works Together
             </h3>
 
-            <p className="text-gray-600 font-sans leading-relaxed mb-8">
+            <p className="text-gray-600  leading-relaxed mb-8">
               SEO brings people to your website. Content gives them a reason to
               stay. Social media expands your reach. Email keeps your audience
               engaged. Analytics tells you what is working.

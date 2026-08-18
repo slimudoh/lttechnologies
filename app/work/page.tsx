@@ -24,7 +24,6 @@ export default function WorkPage() {
       <Introduction />
 
       {/* Projects */}
-
       <Projects />
 
       {/* Capabilities */}

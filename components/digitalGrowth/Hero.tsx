@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-cyan-100 rounded-3xl blur-2xl opacity-50" />
 
             <Image
-              src="/images/insights/digital-growth-strategy.jpg"
+              src="/images/digital-growth-strategy.jpg"
               alt="Digital growth strategy"
               width={600}
               height={400}

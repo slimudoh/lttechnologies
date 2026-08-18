@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import PricingModels from "@/components/pricing/PricingModels";
-import PricingServices from "@/components/pricing/PricingServices";
+import EngagementModels from "@/components/pricing/EngagementModels";
 import ProjectFactors from "@/components/pricing/ProjectFactors";
 import Process from "@/components/pricing/Process";
 import Faq from "@/components/pricing/Faq";
@@ -24,10 +23,7 @@ export default function PricingPage() {
       <Hero />
 
       {/* PricingModels */}
-      <PricingModels />
-
-      {/* Services & Starting Prices */}
-      <PricingServices />
+      <EngagementModels />
 
       {/* How We Price */}
       <ProjectFactors />

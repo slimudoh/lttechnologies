@@ -31,7 +31,7 @@ export default function Recent() {
                   fill
                   className="object-cover"
                 />
-                <Badge className="absolute top-4 left-4 bg-cyan-600 text-white">
+                <Badge className="absolute top-4 left-4 bg-cyan-100 text-cyan-700">
                   {post.category}
                 </Badge>
               </div>
@@ -40,11 +40,11 @@ export default function Recent() {
                   <CardTitle className="text-xl  font-bold text-gray-900 mb-2 line-clamp-2">
                     {post.title}
                   </CardTitle>
-                  <p className="text-gray-600 font-sans text-sm leading-relaxed line-clamp-3">
+                  <p className="text-gray-600  text-sm leading-relaxed line-clamp-3">
                     {post.excerpt}
                   </p>
                 </CardHeader>
-                <div className="flex items-center justify-between text-xs text-gray-500 font-sans mb-4">
+                <div className="flex items-center justify-between text-xs text-gray-500  mb-4">
                   <div className="flex items-center space-x-3">
                     <div className="flex items-center">
                       <User className="h-3 w-3 mr-1" />
@@ -72,10 +72,7 @@ export default function Recent() {
                   ))}
                 </div>
                 <Link href={`/insights/${post.slug}`}>
-                  <Button
-                    variant="outline"
-                    className="w-full border-cyan-600 text-cyan-600 hover:bg-cyan-50 bg-transparent"
-                  >
+                  <Button className="w-full rounded-sm bg-cyan-600 px-5 text-sm text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
                     Read More
                   </Button>
                 </Link>

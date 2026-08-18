@@ -1,7 +1,5 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
-
 const faqs = [
   {
     question: "Do I need a detailed specification before contacting you?",
@@ -38,7 +36,7 @@ export default function Faq() {
           <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Consultation FAQs
           </h2>
-          <p className="text-lg text-gray-600 font-sans">
+          <p className="text-lg text-gray-600 ">
             A few things you may want to know before getting started.
           </p>
         </div>

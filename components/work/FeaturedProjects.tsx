@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
+import SubTitle from "../SubTitle";
 
 export default function FeaturedProjects() {
   const featuredProjects = projects.filter((project) => project.featured);
@@ -16,7 +17,7 @@ export default function FeaturedProjects() {
       {featuredProjects.map((project, index) => (
         <Card
           key={project.title}
-          className="overflow-hidden border-0 bg-white shadow-lg"
+          className="overflow-hidden border-0 bg-white shadow-lg mt-0 pt-0"
         >
           <div
             className={`grid lg:grid-cols-2 ${
@@ -70,13 +71,14 @@ export default function FeaturedProjects() {
                 </p>
               </div>
 
-              <Button
-                asChild
-                variant="outline"
-                className="w-fit border-cyan-600 text-cyan-600 hover:bg-cyan-50"
-              >
-                <Link href="/work/tutorshub">View Case Study</Link>
-              </Button>
+              <Link href="/work/tutorshub">
+                <Button
+                  size="lg"
+                  className="w-full bg-cyan-600 px-8 text-white hover:bg-cyan-700 sm:w-auto rounded-full cursor-pointer"
+                >
+                  View Case Study
+                </Button>
+              </Link>
             </CardContent>
           </div>
         </Card>

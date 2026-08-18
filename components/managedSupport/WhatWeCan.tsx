@@ -11,7 +11,7 @@ export default function WhatWeCan() {
             Support for the Technology You Already Use
           </h2>
 
-          <p className="text-lg text-gray-600 font-sans">
+          <p className="text-lg text-gray-600 ">
             We can work with existing systems or technology we have built for
             you.
           </p>
@@ -37,7 +37,7 @@ export default function WhatWeCan() {
               className="flex items-center gap-2 border border-gray-200 rounded-lg p-4"
             >
               <CheckCircle className="h-5 w-5 text-cyan-600 flex-shrink-0" />
-              <span className="text-sm font-sans text-gray-700">{item}</span>
+              <span className="text-sm  text-gray-700">{item}</span>
             </div>
           ))}
         </div>

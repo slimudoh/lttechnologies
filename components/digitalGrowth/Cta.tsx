@@ -7,11 +7,11 @@ export default function Cta() {
   return (
     <section className="py-20 bg-cyan-600">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl  font-bold text-white mb-6">
+        <h2 className="text-4xl md:text-5xl  font-black text-white mb-6">
           Ready to Grow Your Digital Presence?
         </h2>
 
-        <p className="text-xl text-cyan-100 mb-8 font-sans">
+        <p className="text-xl text-cyan-100 mb-8 ">
           Let's build a digital strategy that helps your business reach more
           people and create more opportunities.
         </p>

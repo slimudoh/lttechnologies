@@ -6,7 +6,6 @@ import Technology from "@/components/softwareDevelopment/Technology";
 import Hero from "@/components/softwareDevelopment/Hero";
 import Introduction from "@/components/softwareDevelopment/Introduction";
 import Why from "@/components/softwareDevelopment/Why";
-import RelatedServices from "@/components/softwareDevelopment/RelatedServices";
 import Cta from "@/components/softwareDevelopment/Cta";
 
 export const metadata: Metadata = {
@@ -35,10 +34,6 @@ export default function SoftwareDevelopmentPage() {
 
       {/* Why LT Technologies */}
       <Why />
-
-      {/* Related Services */}
-
-      <RelatedServices />
 
       {/* CTA */}
       <Cta />

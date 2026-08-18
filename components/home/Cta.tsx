@@ -7,7 +7,7 @@ export default function Cta() {
   return (
     <section className="bg-cyan-600 py-24">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
-        <h2 className="text-4xl font-bold text-white mb-6">
+        <h2 className="text-4xl md:text-5xl  font-black text-white mb-6">
           Have an idea, problem, or business process to improve?
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-cyan-50">

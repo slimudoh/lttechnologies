@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import SubTitle from "../SubTitle";
 
 const projectFactors = [
   "Number and complexity of features",
@@ -29,24 +30,22 @@ export default function ProjectFactors() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <Badge className="mb-4 bg-cyan-100 text-cyan-700 hover:bg-cyan-100">
-              No One-Size-Fits-All Pricing
-            </Badge>
+            <SubTitle title="No One-Size-Fits-All Pricing" />
             <h2 className="text-4xl  font-bold text-gray-900 mb-6">
               Your Project Determines the Price
             </h2>
-            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-6">
+            <p className="text-lg text-gray-600  leading-relaxed mb-6">
               We don't believe in forcing every software project into a
               predefined package. A simple business website and a complex
               enterprise platform have very different requirements.
             </p>
-            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+            <p className="text-lg text-gray-600  leading-relaxed">
               That's why we first understand your business, define the
               requirements, and then provide a clear proposal with scope,
               timeline, deliverables, and pricing.
             </p>
             <Link href="/contact">
-              <Button className="mt-8 bg-cyan-600 hover:bg-cyan-700 text-white">
+              <Button className="rounded-full bg-cyan-600 px-5 text-sm text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer mt-8">
                 Discuss Your Requirements
               </Button>
             </Link>
@@ -56,7 +55,7 @@ export default function ProjectFactors() {
               <CardTitle className="text-2xl  font-bold text-gray-900">
                 What Determines Your Project Cost?
               </CardTitle>
-              <CardDescription className="font-sans">
+              <CardDescription className="">
                 We consider several factors when preparing your proposal.
               </CardDescription>
             </CardHeader>
@@ -68,9 +67,7 @@ export default function ProjectFactors() {
                     className="flex items-start gap-3 bg-white rounded-lg p-4"
                   >
                     <CheckCircle className="h-5 w-5 text-cyan-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700 font-sans">
-                      {factor}
-                    </span>
+                    <span className="text-sm text-gray-700 ">{factor}</span>
                   </div>
                 ))}
               </div>

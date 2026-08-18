@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  ArrowRight,
   Bot,
   CheckCircle2,
   Code2,
@@ -143,12 +144,10 @@ export default function Services() {
                   </div>
 
                   <Link href={`/services/${service.slug}`}>
-                    <Button
-                      variant="outline"
-                      className="w-full border-gray-300 hover:border-cyan-600 hover:text-cyan-600"
-                    >
+                    <div className="inline-flex items-center text-sm font-semibold text-cyan-600 group-hover:text-cyan-700">
                       Explore Service
-                    </Button>
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
                   </Link>
                 </CardContent>
               </Card>

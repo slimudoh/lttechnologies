@@ -40,7 +40,7 @@ export default function Process() {
             How We Drive Digital Growth
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             We combine strategy, execution and continuous improvement to create
             a digital growth system around your business.
           </p>
@@ -57,7 +57,7 @@ export default function Process() {
                 {step.title}
               </h3>
 
-              <p className="text-gray-600 font-sans leading-relaxed">
+              <p className="text-gray-600  leading-relaxed">
                 {step.description}
               </p>
             </div>

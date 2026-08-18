@@ -95,7 +95,7 @@ export default function Support() {
             What We Manage
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             Practical ongoing technology support designed around your business
             and your existing systems.
           </p>
@@ -121,7 +121,7 @@ export default function Support() {
                 </CardHeader>
 
                 <CardContent>
-                  <p className="text-gray-600 font-sans leading-relaxed mb-5">
+                  <p className="text-gray-600  leading-relaxed mb-5">
                     {area.description}
                   </p>
 
@@ -129,7 +129,7 @@ export default function Support() {
                     {area.features.map((feature) => (
                       <li
                         key={feature}
-                        className="flex items-center text-sm text-gray-600 font-sans"
+                        className="flex items-center text-sm text-gray-600 "
                       >
                         <CheckCircle className="h-4 w-4 text-cyan-600 mr-3 flex-shrink-0" />
                         {feature}

@@ -25,8 +25,8 @@ export default function Why() {
 
             <Link href="/about">
               <Button
-                variant="outline"
-                className="border-cyan-600 text-cyan-600 hover:bg-cyan-50"
+                size="lg"
+                className="w-full bg-cyan-600 px-8 text-white hover:bg-cyan-700 sm:w-auto rounded-full cursor-pointer"
               >
                 Learn More About Us
               </Button>

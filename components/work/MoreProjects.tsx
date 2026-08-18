@@ -50,13 +50,14 @@ export default function MoreProjects() {
               ))}
             </div>
 
-            <Button
-              asChild
-              variant="outline"
-              className="w-fit border-cyan-600 text-cyan-600 hover:bg-cyan-50"
-            >
-              <Link href="/work/tutorshub">View Case Study</Link>
-            </Button>
+            <Link href="/work/tutorshub">
+              <Button
+                size="lg"
+                className="w-full bg-cyan-600 px-8 text-white hover:bg-cyan-700 sm:w-auto rounded-full cursor-pointer"
+              >
+                View Case Study
+              </Button>
+            </Link>
           </CardContent>
         </Card>
       ))}
