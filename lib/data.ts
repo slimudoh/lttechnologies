@@ -145,7 +145,7 @@ export const projects = [
   {
     slug: "rebar-perfecta",
     title: "Rebar Perfecta Ltd",
-    category: "Construction, Dredging, Real Estate & Civil Infrastructure",
+    category: "Construction & Civil Infrastructure",
     description:
       "Rebar Perfecta is a Lagos-based construction and dredging company building the Nigerian economy 'Brick by Brick, Calloused hand by Calloused hand, Grain of sand by Grain of sand'.",
     technologies: ["NuxtJS", "Vue", "TypeScript"],
