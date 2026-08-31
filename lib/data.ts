@@ -1,151 +1,156 @@
 export const projects = [
   {
-    title: "Live Learning Marketplace",
-    category: "Web Application",
+    slug: "ribigifts",
+    title: "RibiGifts",
+    category: "E-commerce Gifting Platform",
     description:
-      "A modern live-learning platform connecting students with instructors through interactive online classes, payments, recordings and instructor management.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Jitsi", "Stripe"],
-    result:
-      "A complete digital learning ecosystem for live and on-demand education.",
-    image: "/images/work/tutorshub.jpg",
-    featured: true,
-  },
-  {
-    title: "Enterprise Management Platform",
-    category: "Enterprise Software",
-    description:
-      "A secure enterprise platform designed to streamline business operations, approvals, workflows, reporting and user management.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Keycloak"],
-    result:
-      "Centralized workflows with improved visibility, security and operational efficiency.",
-    image: "/images/work/enterprise-platform.jpg",
-    featured: true,
-  },
-  {
-    title: "Financial Services Platform",
-    category: "FinTech",
-    description:
-      "A digital platform built to support financial operations, customer management, transactions and business reporting.",
-    technologies: ["React", "Node.js", "PostgreSQL", "REST API"],
-    result:
-      "A scalable foundation for managing financial products and digital operations.",
-    image: "/images/work/fintech-platform.jpg",
-    featured: false,
-  },
-  {
-    title: "Business Website & Digital Experience",
-    category: "Web Development",
-    description:
-      "A high-performance corporate website designed to communicate services, build trust and convert visitors into prospective clients.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    result:
-      "A professional digital presence optimized for performance, SEO and conversion.",
-    image: "/images/work/corporate-website.jpg",
-    featured: false,
-  },
-  {
-    title: "Customer Portal",
-    category: "Web Application",
-    description:
-      "A secure self-service portal that gives customers access to their accounts, information, requests and important documents.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "JWT"],
-    result:
-      "Reduced manual processes while giving customers faster access to services.",
-    image: "/images/work/customer-portal.jpg",
-    featured: false,
-  },
-  {
-    title: "Cloud & API Infrastructure",
-    category: "Cloud & DevOps",
-    description:
-      "Modern backend and cloud infrastructure designed for reliable deployment, API integration, security and scalable application delivery.",
-    technologies: ["Node.js", "Docker", "Cloudflare", "CI/CD"],
-    result:
-      "A more reliable and maintainable infrastructure for growing digital products.",
-    image: "/images/work/cloud-infrastructure.jpg",
-    featured: false,
-  },
-  {
-    slug: "tutorshub",
-    title: "TutorsHub",
-    category: "EdTech Platform",
-    shortDescription:
-      "A live learning marketplace connecting students with instructors through interactive online classes.",
-    description:
-      "TutorsHub is a digital learning marketplace designed to make live education more accessible. The platform connects students with instructors and provides the infrastructure required to discover lessons, enroll, make payments, attend live classes and access recordings.",
-    client: "TutorsHub",
-    year: "2026",
-    duration: "Product Development",
-    services: [
-      "Product Development",
-      "Web Application Development",
-      "Payment Integration",
-      "Video Integration",
-      "Cloud Infrastructure",
-    ],
+      "RibiGifts is a global gifting platform designed to make sending premium gifts simple and delightful. The platform connects customers with a curated selection of products from trusted vendors and provides the infrastructure required to discover gifts, personalize orders, make secure payments, and deliver physical or digital gifts worldwide.",
     technologies: [
       "Next.js",
       "React",
       "TypeScript",
       "Node.js",
       "Express",
-      "PostgreSQL",
-      "Jitsi",
+      "MySql",
+      "Sequelize",
+      "Backblaze B2",
       "Stripe",
       "Flutterwave",
-      "Cloudflare",
     ],
-    heroImage: "/images/work/tutorshub.jpg",
-    screenshots: [
-      {
-        image: "/images/work/tutorshub-dashboard.jpg",
-        title: "Learning Dashboard",
-        description:
-          "A centralized dashboard where users can manage their learning activities and upcoming sessions.",
-      },
-      {
-        image: "/images/work/tutorshub-live-class.jpg",
-        title: "Live Classes",
-        description:
-          "Integrated live video functionality allows instructors and students to participate in scheduled classes.",
-      },
-      {
-        image: "/images/work/tutorshub-payments.jpg",
-        title: "Payments",
-        description:
-          "Integrated payment infrastructure allows users to securely purchase access to paid learning sessions.",
-      },
+    image: "/images/work/rg.png",
+    featured: true,
+  },
+  {
+    slug: "ribirewards",
+    title: "RibiRewards",
+    category: "Corporate Gifting/HR Solutions",
+    description:
+      "RibiRewards is a comprehensive rewards and benefits platform designed specifically for the African market. Founded in 2023 and based in London, England, the company provides digital reward solutions that enable businesses to offer flexible employee benefits across multiple African countries.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MySql",
+      "Sequelize",
+      "Backblaze B2",
+      "Stripe",
+      "Flutterwave",
     ],
-    challenge: [
-      "Create a marketplace where students can discover and enroll in live lessons.",
-      "Allow instructors to manage their lessons, schedules and students.",
-      "Provide reliable live video sessions directly from the platform.",
-      "Support online payments and different payment providers.",
-      "Give enrolled students access to recordings after live sessions.",
+    image: "/images/work/rr.png",
+    featured: true,
+  },
+  {
+    slug: "sendachoice",
+    title: "SendAChoice",
+    category: "Digital Gifting Platform",
+    description:
+      "SendaChoice is an online platform that enables users to send gift cards where recipients can choose their own gifts from curated collections. It supports both digital (instant delivery via link) and physical (mailed cards) options, operates across 20+ countries with local brands and currencies, and is designed for both individual and corporate gifting with features like budget control, scheduling up to one year in advance, and redemption tracking.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MySql",
+      "Sequelize",
+      "Backblaze B2",
+      "Stripe",
+      "Flutterwave",
     ],
-    approach: [
-      "We started by defining the core student and instructor journeys.",
-      "The platform architecture was designed around separate frontend, backend and database responsibilities.",
-      "Authentication and authorization were implemented to provide different experiences for students and instructors.",
-      "Third-party services were integrated where they provided strong value without unnecessarily increasing development complexity.",
-    ],
-    solution: [
-      "Responsive web application built with Next.js and React.",
-      "Node.js and Express backend supporting the platform APIs.",
-      "PostgreSQL database for structured application data.",
-      "Jitsi integration for live classes.",
-      "Stripe and Flutterwave integrations for payments.",
-      "Cloud storage and CDN infrastructure for digital assets.",
-      "Instructor approval and student enrollment workflows.",
-    ],
-    results: [
-      "A complete live-learning marketplace.",
-      "Centralized student and instructor workflows.",
-      "Integrated live video learning experience.",
-      "Online payment infrastructure.",
-      "Recording access for enrolled students.",
-      "Scalable foundation for future platform growth.",
-    ],
+    image: "/images/work/sc.png",
+    featured: true,
+  },
+  {
+    slug: "joyribbons",
+    title: "JoyRibbons",
+    category: "Wedding Registry & Gifting Platform",
+    description:
+      "Africa's #1 Wedding Registry, Gift Shop & Wedding Website. JoyRibbons is Nigeria's foremost wedding company that lets couples create a fully customizable free wedding website to tell their love story, share wedding info, and manage RSVPs and well-wishes. Couples can mix and match their gift list - adding favourite brands (Le Creuset, Smeg, KitchenAid, Airbnb etc), honeymoon funds, charitable donations and custom products via link. Guests can buy or club together via group gifting. How it works: 1) create. your wedding website, 2) share your URL. with loved ones, 3) track. notifications when gifts are purchased.",
+    technologies: ["Laravel", "PHP", "React", "MySql", "Stripe"],
+    image: "/images/work/jr.png",
+    featured: false,
+  },
+  {
+    slug: "companyqat",
+    title: "CompanyQat",
+    category: "Corporate Gifting SaaS Platform",
+    description:
+      "CompanyQat provides HR and team managers in Africa with an AI-powered platform to automate and personalize employee, client, and customer gifting. It supports birthdays, work anniversaries, onboarding, sales campaigns, and more, with seamless HRMS integration and a wide range of reward options.",
+    technologies: ["Laravel", "PHP", "React", "MySql", "Paystack"],
+    image: "/images/work/cc.png",
+    featured: false,
+  },
+  {
+    slug: "ribbonsxp",
+    title: "RibbonsXp",
+    category: "Experience Gifting & Booking Platform",
+    description:
+      "RibbonsXP is a platform offering hand-picked hotels, spas, restaurants, and travel experiences across Africa. Users can book experiences for themselves or gift them to others via instant e-vouchers or physical gift cards. The platform features 1,200+ curated experiences across 14 African countries, including dining, spa, beach, and team retreats. It also provides options for group experiences, team offsites, and seasonal offerings like 'Detty December' packages for Lagos. The process is streamlined: browse, gift instantly, let recipients book their preferred date, and create unforgettable memories.",
+    technologies: ["Laravel", "PHP", "React", "MySql", "Paystack"],
+    image: "/images/work/rx.png",
+    featured: false,
+  },
+  {
+    slug: "myfoodpersonality",
+    title: "FoodLama - Connect Your Food Choices with Your Personality Traits",
+    category: "Lifestyle/Interactive Quiz",
+    description:
+      "An interactive web platform designed to help users understand the psychological and behavioral drivers behind their food choices. Through a quick questionnaire, it evaluates food preferences across multiple dimensions (such as Motivations, Openness, Control, and Social Preference) to deliver behavior insights and personalized daily guidance.",
+    technologies: ["NuxtJS", "Vue", "TypeScript"],
+    image: "/images/work/fl.png",
+    featured: false,
+  },
+  {
+    slug: "rcmendemidtown",
+    title: "Rotary Club of Mende Midtown",
+    category: "Community Service Organization",
+    description:
+      "The Rotary Club of Mende Midtown (District 9110, Nigeria) is a humanitarian and community service organization dedicated to 'changing lives'. Founded in 2020, the club actively engages in Rotary's seven areas of focus, including mental health awareness, obesity prevention, clean water projects, and youth development through Interact and Rotaract initiatives.",
+    technologies: ["Laravel", "PHP", "React", "MySql"],
+    image: "/images/work/rcm.png",
+    featured: false,
+  },
+  {
+    slug: "paytro",
+    title: "Paytro",
+    category: "E-commerce & Payment Solutions",
+    description:
+      "Paytro is a fast-growing e-commerce company specializing in electronic products, from personal devices to home appliances. The company is dedicated to providing customers with seamless online shopping experiences and high-quality products at competitive prices. Paytro also offers payment solutions, including a 'Buy Now Pay Later' (BNPL) service, and has partnered with Greenleaf Africa to provide flexible financing for solar energy systems, allowing customers to pay 40% upfront and the balance over 3 to 6 months. The platform aims to onboard retailers and SMEs, expanding its ecosystem of merchants and payment services.",
+    technologies: ["Laravel", "PHP", "React", "MySql", "Paystack", "Monnify"],
+    image: "/images/work/pt.png",
+    featured: false,
+  },
+  {
+    slug: "tfslending",
+    title: "TFS Lending",
+    category: "Financial Services",
+    description:
+      "TFS Lending is a financial services company headquartered in Lagos, Nigeria, specializing in various lending solutions. The company appears to focus on providing loan products to individuals and possibly businesses, though specific details about their services are limited from public sources.",
+    technologies: ["Laravel", "PHP", "React", "MySql"],
+    image: "/images/work/tfs.png",
+    featured: false,
+  },
+  {
+    slug: "upthrust-digital",
+    title: "Upthrust",
+    category: "IT Career Training and Consulting",
+    description:
+      "Upthrust Digital helps individuals transition into tech careers through practical training programs. They offer career pathways to become business analysts, product managers, software engineers, product designers, and QA engineers. The company focuses on hands-on, practical IT and tech training to help people start or advance their careers in the technology sector.",
+    technologies: ["NuxtJS", "Vue", "TypeScript"],
+    image: "/images/work/ud.png",
+    featured: false,
+  },
+  {
+    slug: "rebar-perfecta",
+    title: "Rebar Perfecta Ltd",
+    category: "Construction, Dredging, Real Estate & Civil Infrastructure",
+    description:
+      "Rebar Perfecta is a Lagos-based construction and dredging company building the Nigerian economy 'Brick by Brick, Calloused hand by Calloused hand, Grain of sand by Grain of sand'.",
+    technologies: ["NuxtJS", "Vue", "TypeScript"],
+    image: "/images/work/rb.png",
+    featured: false,
   },
 ];
 

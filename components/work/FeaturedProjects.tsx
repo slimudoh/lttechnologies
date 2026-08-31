@@ -6,8 +6,6 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react";
-import SubTitle from "../SubTitle";
 
 export default function FeaturedProjects() {
   const featuredProjects = projects.filter((project) => project.featured);
@@ -63,22 +61,6 @@ export default function FeaturedProjects() {
                   ))}
                 </div>
               </div>
-
-              <div className="mb-8 flex items-start gap-3">
-                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-600" />
-                <p className="text-sm leading-6 text-gray-600">
-                  {project.result}
-                </p>
-              </div>
-
-              <Link href="/work/tutorshub">
-                <Button
-                  size="lg"
-                  className="w-full bg-cyan-600 px-8 text-white hover:bg-cyan-700 sm:w-auto rounded-full cursor-pointer"
-                >
-                  View Case Study
-                </Button>
-              </Link>
             </CardContent>
           </div>
         </Card>

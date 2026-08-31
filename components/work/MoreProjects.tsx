@@ -15,7 +15,7 @@ export default function MoreProjects() {
       {otherProjects.map((project) => (
         <Card
           key={project.title}
-          className="group overflow-hidden border-0 bg-white shadow-md transition-all duration-300"
+          className="group overflow-hidden border-0 bg-white shadow-md transition-all duration-300 pt-0"
         >
           <div className="relative h-56 overflow-hidden bg-gray-200">
             <Image
@@ -49,15 +49,6 @@ export default function MoreProjects() {
                 </span>
               ))}
             </div>
-
-            <Link href="/work/tutorshub">
-              <Button
-                size="lg"
-                className="w-full bg-cyan-600 px-8 text-white hover:bg-cyan-700 sm:w-auto rounded-full cursor-pointer"
-              >
-                View Case Study
-              </Button>
-            </Link>
           </CardContent>
         </Card>
       ))}
