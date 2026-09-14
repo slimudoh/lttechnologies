@@ -8,7 +8,7 @@ export default function FeaturedImage({ post }: { post: any }) {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="relative aspect-[16/8] w-full overflow-hidden rounded-2xl shadow-2xl">
           <Image
-            src={post.thumbnail || "/images/insights/default.jpg"}
+            src={post.thumbnail || "/images/placeholder.jpg"}
             alt={post.title}
             fill
             priority

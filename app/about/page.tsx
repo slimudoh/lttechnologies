@@ -10,8 +10,8 @@ import  Cta  from "@/components/about/Cta";
 
 export const metadata: Metadata = {
   title: {
-    default: "About Us | LT Technologies Limited",
-    template: "%s | LT Technologies",
+    default: "About Us | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
   },
   description:
     "Learn about LT Technologies Limited, a technology company helping businesses build digital products, automate processes, and grow through technology.",

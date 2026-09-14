@@ -4,6 +4,15 @@ import Solutions from "@/components/aiAutomation/Solutions";
 import Automation from "@/components/aiAutomation/Automation";
 import Process from "@/components/aiAutomation/Process";
 import Cta from "@/components/aiAutomation/Cta";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "AI Automation | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
+  },
+};
+
 
 export default function AiAutomationPage() {
   return (

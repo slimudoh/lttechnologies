@@ -46,7 +46,7 @@ export default function Hero() {
 
           <div className="relative">
             <Image
-              src="/images/ai-automation.jpg"
+              src="/images/services/ai-hero.jpg"
               alt="AI and business automation"
               width={600}
               height={400}

@@ -7,8 +7,8 @@ import Hero from "@/components/consultation/Hero";
 
 export const metadata: Metadata = {
   title: {
-    default: "Consultation | LT Technologies Limited",
-    template: "%s | LT Technologies",
+    default: "Consultation | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
   },
   description:
     "Talk to LT Technologies about your software, AI automation, digital growth, or technology needs.",

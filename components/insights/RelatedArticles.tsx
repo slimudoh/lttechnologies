@@ -33,7 +33,7 @@ export default function RelatedArticles({ posts }: { posts: any[] }) {
                   <div className="relative h-48 w-full">
                     <Image
                       src={
-                        relatedPost.thumbnail || "/images/insights/default.jpg"
+                        relatedPost.thumbnail || "/images/placeholder.jpg"
                       }
                       alt={relatedPost.title}
                       fill

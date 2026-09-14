@@ -1,8 +1,4 @@
-"use client";
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
 import Image from "next/image";
@@ -14,7 +10,7 @@ export default function FeaturedProjects() {
     <div className="space-y-10">
       {featuredProjects.map((project, index) => (
         <Card
-          key={project.title}
+          key={project.slug}
           className="overflow-hidden border-0 bg-white shadow-lg mt-0 pt-0"
         >
           <div
@@ -25,8 +21,10 @@ export default function FeaturedProjects() {
             <div className="relative min-h-[320px] bg-gray-200">
               <Image
                 src={project?.image || "/images/placeholder.jpg"}
-                alt={project.title}
+                alt={`${project.title} — ${project.category}`}
                 fill
+                priority={index === 0}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -36,7 +34,7 @@ export default function FeaturedProjects() {
                 {project.category}
               </Badge>
 
-              <h3 className="mb-4  text-3xl font-black text-gray-900">
+              <h3 className="mb-4 text-3xl font-black text-gray-900">
                 {project.title}
               </h3>
 

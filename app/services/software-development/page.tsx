@@ -9,7 +9,10 @@ import Why from "@/components/softwareDevelopment/Why";
 import Cta from "@/components/softwareDevelopment/Cta";
 
 export const metadata: Metadata = {
-  title: "Custom Software Development | LT Technologies",
+  title: {
+    default: "Custom Software Development | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
+  },
   description:
     "Custom software development services for businesses that need reliable web applications, enterprise systems, SaaS products, APIs and digital platforms.",
 };

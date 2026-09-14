@@ -6,6 +6,16 @@ import Why from "@/components/managedSupport/Why";
 import HowItWorks from "@/components/managedSupport/HowItWorks";
 import WhatWeCan from "@/components/managedSupport/WhatWeCan";
 import Cta from "@/components/managedSupport/Cta";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: {
+    default: "Managed Support | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
+  },
+};
+
 
 export default function ManagedSupportPage() {
   return (

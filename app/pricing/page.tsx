@@ -10,7 +10,7 @@ import Hero from "@/components/pricing/Hero";
 export const metadata: Metadata = {
   title: {
     default: "Pricing | LT Technologies Limited | Build. Grow. Automate.",
-    template: "%s | LT Technologies",
+    template: "%s | LT Technologies Limited",
   },
   description:
     "Explore flexible software development, cloud, AI, consulting, and dedicated development pricing from LT Technologies.",

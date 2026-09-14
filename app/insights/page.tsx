@@ -8,7 +8,7 @@ import Cta from "@/components/insights/Cta";
 export const metadata: Metadata = {
   title: {
     default: "Insight | LT Technologies Limited | Build. Grow. Automate.",
-    template: "%s | LT Technologies",
+    template: "%s | LT Technologies Limited",
   },
 };
 

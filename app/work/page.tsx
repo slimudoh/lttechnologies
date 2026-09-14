@@ -10,7 +10,7 @@ import Cta from "@/components/softwareDevelopment/Cta";
 export const metadata: Metadata = {
   title: {
     default: "Our Work | LT Technologies Limited | Build. Grow. Automate.",
-    template: "%s | LT Technologies",
+    template: "%s | LT Technologies Limited",
   },
 };
 
@@ -30,7 +30,6 @@ export default function WorkPage() {
       <Capabilities />
 
       {/* Process */}
-
       <Process />
 
       <Cta />

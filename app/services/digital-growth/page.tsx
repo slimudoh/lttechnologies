@@ -9,7 +9,10 @@ import Results from "@/components/digitalGrowth/Results";
 import Cta from "@/components/digitalGrowth/Cta";
 
 export const metadata: Metadata = {
-  title: "Digital Growth | LT Technologies",
+  title: {
+    default: "Digital Growth | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies",
+  },
   description:
     "Grow your digital presence with content, SEO, social media, email marketing and digital strategies designed to attract and convert customers.",
 };

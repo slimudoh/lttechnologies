@@ -10,7 +10,10 @@ import RelatedArticles from "@/components/insights/RelatedArticles";
 import ArticleCta from "@/components/insights/ArticleCta";
 
 export const metadata: Metadata = {
-  title: "Insight | LT Technologies",
+  title: {
+    default: "Insight | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
+  },
   description:
     "Practical insights on software development, AI, automation, digital growth, and technology for modern businesses.",
 };

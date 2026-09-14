@@ -16,6 +16,7 @@ import ServiceLink from "@/components/header/ServiceLink";
 import MobileLink from "@/components/header/MobileLink";
 import MobileSubLink from "@/components/header/MobileSubLink";
 import { usePathname } from "next/navigation";
+import Logo from "../Logo";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -58,17 +59,7 @@ export default function Navigation() {
           className="group flex items-center gap-2"
           onClick={closeMenu}
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-lg font-bold text-white shadow-lg shadow-slate-900/10 transition-transform group-hover:scale-105">
-            LT
-          </div>
-          {/* <div className="hidden sm:block">
-            <span className="block text-lg font-bold tracking-tight text-slate-950">
-              LT Technologies
-            </span>
-            <span className="block text-[10px] font-medium uppercase tracking-[0.2em] text-slate-400">
-              Build · Grow · Automate
-            </span>
-          </div> */}
+          <Logo bgColor="bg-slate-950" textColor="text-white" />
         </Link>
         {/* Desktop Navigation */}
 

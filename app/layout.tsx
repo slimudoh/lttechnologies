@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/header";
+import Providers from "@/components/Providers";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,7 +15,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: {
     default: "LT Technologies Limited | Build. Grow. Automate.",
-    template: "%s | LT Technologies",
+    template: "%s | LT Technologies Limited",
   },
 
   description:
@@ -75,10 +76,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} antialiased`}>
       <body>
-        <div className="min-h-screen bg-white">
-          <Navigation />
-          {children}
-        </div>
+        <Providers>
+          <div className="min-h-screen bg-white">
+            <Navigation />
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   );

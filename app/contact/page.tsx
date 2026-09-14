@@ -11,8 +11,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Contact Us | LT Technologies Limited",
-    template: "%s | LT Technologies",
+    default: "Contact Us | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
   },
   description:
     "Talk to LT Technologies about your software, AI automation, digital growth, or technology needs.",

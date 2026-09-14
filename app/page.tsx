@@ -12,7 +12,7 @@ import Cta from "@/components/home/Cta";
 export const metadata: Metadata = {
   title: {
     default: "Home | LT Technologies Limited | Build. Grow. Automate.",
-    template: "%s | LT Technologies",
+    template: "%s | LT Technologies Limited",
   },
 };
 

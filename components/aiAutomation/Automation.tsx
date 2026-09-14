@@ -1,6 +1,7 @@
 "use client";
 
 import { BrainCircuit, Settings, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 export default function Automation() {
   return (
@@ -68,10 +69,12 @@ export default function Automation() {
           </div>
 
           <div>
-            <img
-              src="/images/ai-automation.jpg"
+            <Image
+src="/images/services/ai-body.jpg"
               alt="Business AI automation"
               className="rounded-lg shadow-xl"
+              width={500}
+              height={300}
             />
           </div>
         </div>

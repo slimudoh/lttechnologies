@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -12,9 +13,7 @@ export default function Footer() {
           {/* Company */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-lg font-bold text-slate-950">
-                LT
-              </div>
+              <Logo bgColor="bg-white" textColor="text-slate-950" />
 
               <div>
                 <span className="block text-lg font-bold tracking-tight">
@@ -196,7 +195,8 @@ export default function Footer() {
         <div className="mt-14 border-t border-white/10 pt-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <p className="text-sm text-slate-500">
-              © {new Date().getFullYear()} LT Technologies. All rights reserved.
+              © {new Date().getFullYear()} LT Technologies Limited. All rights
+              reserved.
             </p>
 
             <div className="flex flex-wrap gap-6 text-sm text-slate-500">

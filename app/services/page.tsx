@@ -8,7 +8,10 @@ import Why from "@/components/services/Why";
 import Cta from "@/components/services/Cta";
 
 export const metadata: Metadata = {
-  title: "Services | LT Technologies",
+  title: {
+    default: "Services | LT Technologies Limited | Build. Grow. Automate.",
+    template: "%s | LT Technologies Limited",
+  },
   description:
     "LT Technologies helps businesses build digital products, automate operations, grow online, and keep their technology running reliably.",
 };

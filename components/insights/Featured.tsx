@@ -3,7 +3,7 @@
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, User } from "lucide-react";
+import { Calendar, Clock, User, FileText } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllBlogPosts } from "@/lib/data";
@@ -19,57 +19,81 @@ export default function Featured() {
           <h2 className="text-4xl  font-bold text-gray-900 mb-4">
             Featured Article
           </h2>
-          <Card className="border-0 shadow-xl overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="relative min-h-[280px] lg:min-h-full">
-                <Image
-                  src={featuredPost.thumbnail || "/images/insights/default.jpg"}
-                  alt={featuredPost.title}
-                  fill
-                  priority
-                  className="object-cover"
-                />
-                <Badge className="absolute top-4 left-4 bg-cyan-100 text-cyan-700  ">
-                  {featuredPost.category}
-                </Badge>
+
+          {!featuredPost ? (
+            <div className="flex flex-col items-center justify-center text-center py-20 px-4 border border-dashed border-gray-300 rounded-lg bg-gray-50">
+              <div className="h-14 w-14 rounded-full bg-cyan-100 flex items-center justify-center mb-4">
+                <FileText className="h-6 w-6 text-cyan-600" />
               </div>
-              <div className="p-8 flex flex-col justify-between">
-                <div>
-                  <CardHeader className="p-0 mb-4">
-                    <CardTitle className="text-2xl  font-bold text-gray-900 mb-3">
-                      {featuredPost.title}
-                    </CardTitle>
-                    <p className="text-gray-600  leading-relaxed">
-                      {featuredPost.excerpt}
-                    </p>
-                  </CardHeader>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500  mb-6">
-                    <div className="flex items-center">
-                      <User className="h-4 w-4 mr-1" />
-                      {featuredPost.author}
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {new Date(featuredPost.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </div>
-                    <div className="flex items-center">
-                      <Clock className="h-4 w-4 mr-1" />
-                      {featuredPost.readTime}
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                No featured article yet
+              </h3>
+              <p className="text-sm text-gray-500 max-w-sm">
+                Check back soon — a featured article will appear here once one
+                is published.
+              </p>
+            </div>
+          ) : (
+            <Card className="border-0 shadow-xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="relative min-h-[280px] lg:min-h-full">
+                  {featuredPost?.thumbnail && (
+                    <Image
+                      src={
+                        featuredPost.thumbnail || "/images/placeholder.jpg"
+                      }
+                      alt={featuredPost?.title}
+                      fill
+                      priority
+                      className="object-cover"
+                    />
+                  )}
+
+                  <Badge className="absolute top-4 left-4 bg-cyan-100 text-cyan-700  ">
+                    {featuredPost?.category}
+                  </Badge>
+                </div>
+                <div className="p-8 flex flex-col justify-between">
+                  <div>
+                    <CardHeader className="p-0 mb-4">
+                      <CardTitle className="text-2xl  font-bold text-gray-900 mb-3">
+                        {featuredPost?.title}
+                      </CardTitle>
+                      <p className="text-gray-600  leading-relaxed">
+                        {featuredPost?.excerpt}
+                      </p>
+                    </CardHeader>
+                    <div className="flex items-center space-x-4 text-sm text-gray-500  mb-6">
+                      <div className="flex items-center">
+                        <User className="h-4 w-4 mr-1" />
+                        {featuredPost?.author}
+                      </div>
+                      <div className="flex items-center">
+                        <Calendar className="h-4 w-4 mr-1" />
+                        {new Date(featuredPost?.date).toLocaleDateString(
+                          "en-US",
+                          {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                          },
+                        )}
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1" />
+                        {featuredPost?.readTime}
+                      </div>
                     </div>
                   </div>
+                  <Link href={`/insights/${featuredPost?.slug}`}>
+                    <Button className="rounded-full bg-cyan-600 px-5 text-sm text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
+                      Read Full Article
+                    </Button>
+                  </Link>
                 </div>
-                <Link href={`/insights/${featuredPost.slug}`}>
-                  <Button className="rounded-full bg-cyan-600 px-5 text-sm text-white shadow-lg shadow-cyan-600/10 hover:bg-cyan-500 cursor-pointer">
-                    Read Full Article
-                  </Button>
-                </Link>
               </div>
-            </div>
-          </Card>
+            </Card>
+          )}
         </div>
       </div>
     </section>
